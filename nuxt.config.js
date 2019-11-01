@@ -23,6 +23,9 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/css/general.css',
+    '@/assets/css/font.css',
+    // '@/assets/css/icon-fonts/Flaticon.eot'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -48,6 +51,34 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+  },
+  /**
+   * Bootstrap-Vue
+   */
+  bootstrapVue: {
+    // bootstrapCSS: false, // here you can disable automatic bootstrapCSS in case you are loading it yourself using sass
+    // bootstrapVueCSS: false, // CSS that is specific to bootstrapVue components can also be disabled. That way you won't load css for modules that you don't use
+    // Here you can specify which components you want to load and use:
+    componentPlugins: [
+      'NavbarPlugin',
+      'FormPlugin',
+      'FormCheckboxPlugin',
+      'FormInputPlugin',
+      'FormRadioPlugin',
+      'ButtonPlugin',
+      'LayoutPlugin',
+      'PaginationNavPlugin',
+      'LinkPlugin',
+      'TabsPlugin',
+      'CardPlugin',
+      'ListGroupPlugin',
+      'BadgePlugin',
+      'FormSelectPlugin',
+      'FormCheckboxPlugin',
+      'FormGroupPlugin'
+    ],
+    // Here you can specify which directives you want to load and use. Look into official docs to get a list of what's available
+    directivePlugins: ['Popover']
   },
   /*
   ** Build configuration
