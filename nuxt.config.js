@@ -18,14 +18,18 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { 
+    color: 'red',
+    height: '4px',
+    duration: 5000,
+    throttle: 200
+   },
   /*
   ** Global CSS
   */
   css: [
     '@/assets/css/general.css',
-    '@/assets/css/font.css',
-    // '@/assets/css/icon-fonts/Flaticon.eot'
+    '@/assets/css/font.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -80,6 +84,22 @@ export default {
     // Here you can specify which directives you want to load and use. Look into official docs to get a list of what's available
     directivePlugins: ['Popover']
   },
+
+  router: {
+    linkActiveClass: 'active'
+  },
+
+  // transistion: {
+  //   //a means of using animations within the page
+  //   name: 'page',
+  //   mode: 'out-in'
+  // },
+
+  // loadingIndicator: {
+  //   name: 'circle',
+  //   color: '#fa923f',
+  //   duration: 3000
+  // },
   /*
   ** Build configuration
   */

@@ -1,30 +1,27 @@
 <template>
   <div>
     <Loader v-if="loading"/>
-    <div v-else>
-      <Header/>
-      <nuxt />
-      <Footer/>
+    <div>
+      <nuxt/>
     </div>
   </div>
 </template>
 <script>
 
-import Header from './../components/template/header'
-import Footer from './../components/template/footer'
 import Loader from './../components/page_loader'
+
 export default {
+  components: {
+    Loader
+  },
+
   data() {
     return {
       loading: true
     }
   },
 
-  components: {
-    Header, Footer, Loader
-  },
-
-  mounted() {
+   mounted() {
     setTimeout(() => {
       this.loading = false
     }, 2000)
@@ -33,6 +30,7 @@ export default {
 </script>
 
 <style>
+
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
