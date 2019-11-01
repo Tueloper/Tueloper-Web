@@ -18,11 +18,18 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { 
+    color: 'red',
+    height: '4px',
+    duration: 5000,
+    throttle: 200
+   },
   /*
   ** Global CSS
   */
   css: [
+    '@/assets/css/general.css',
+    '@/assets/css/font.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -49,6 +56,50 @@ export default {
   */
   axios: {
   },
+  /**
+   * Bootstrap-Vue
+   */
+  bootstrapVue: {
+    // bootstrapCSS: false, // here you can disable automatic bootstrapCSS in case you are loading it yourself using sass
+    // bootstrapVueCSS: false, // CSS that is specific to bootstrapVue components can also be disabled. That way you won't load css for modules that you don't use
+    // Here you can specify which components you want to load and use:
+    componentPlugins: [
+      'NavbarPlugin',
+      'FormPlugin',
+      'FormCheckboxPlugin',
+      'FormInputPlugin',
+      'FormRadioPlugin',
+      'ButtonPlugin',
+      'LayoutPlugin',
+      'PaginationNavPlugin',
+      'LinkPlugin',
+      'TabsPlugin',
+      'CardPlugin',
+      'ListGroupPlugin',
+      'BadgePlugin',
+      'FormSelectPlugin',
+      'FormCheckboxPlugin',
+      'FormGroupPlugin'
+    ],
+    // Here you can specify which directives you want to load and use. Look into official docs to get a list of what's available
+    directivePlugins: ['Popover']
+  },
+
+  router: {
+    linkActiveClass: 'active'
+  },
+
+  // transistion: {
+  //   //a means of using animations within the page
+  //   name: 'page',
+  //   mode: 'out-in'
+  // },
+
+  // loadingIndicator: {
+  //   name: 'circle',
+  //   color: '#fa923f',
+  //   duration: 3000
+  // },
   /*
   ** Build configuration
   */
