@@ -23,6 +23,6 @@
 
 <script>
 export default {
-  name: 'header'
+  name: 'headerP'
 }
 </script>

@@ -7,7 +7,8 @@
 <script>
 
 export default {
-  layout: 'blog'
+  layout: 'blog',
+  name: 'index'
 }
 </script>
 

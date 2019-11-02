@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Header from '@/components/template/header.vue'
+import Header from '@/components/template/headerP.vue'
 import Loader from '@/components/page_loader.vue'
 import About from '@/components/landing/about.vue'
 import Socials from '@/components/landing/socials.vue'

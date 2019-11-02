@@ -1,5 +1,5 @@
 import { shallowMount, mount  } from '@vue/test-utils'
-import Header from '../components/template/header'
+import Header from '../components/template/headerP'
 import Index from '../pages/index'
 
 describe('READING FILES FROM LANDING PAGE', () => {
