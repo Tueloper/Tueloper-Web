@@ -3,6 +3,7 @@
     <About/>    
     <Socials/>    
     <Education/> 
+    <Skills/> 
     <Contact/> 
   </div>
 </template>
@@ -13,10 +14,11 @@ import About from '~/components/landing/about.vue'
 import Socials from '~/components/landing/socials.vue'
 import Education from '~/components/landing/education.vue'
 import Contact from '~/components/landing/contact.vue'
+import Skills from '~/components/landing/skills.vue'
 
 export default {
   components: {
-    Logo, About, Socials, Education, Contact
+    Logo, About, Socials, Education, Contact, Skills
   }
 }
 </script>

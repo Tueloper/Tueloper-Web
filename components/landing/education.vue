@@ -18,7 +18,7 @@
 								<h2>2011 - 2016</h2>
 								<h3>Environmental Technology</h3>
 								<h4>Federal University Of Technology, Owerri (FUTO)</h4>
-								<p>As broad as the Environmental studies, I streamlined my study to Geo-Environmental Technology where i developed my skills in Geophysics, Environmental Impact Assesment (EIA), Safety and Geographical Information Systems (GIS). I also gained certicates in HSE 1, 2 & 3, Project Managemnet and Quality Management. </p>
+								<p>As broad as the Environmental studies can be, I streamlined my study to Geo-Environmental Technology where i developed my skills in Geophysics, Environmental Impact Assesment (EIA), Safety and Geographical Information Systems (GIS). I also gained certicates in HSE 1, 2 & 3, Project Managemnet and Quality Management. </p>
 							</li>
 						</ul>
 					</div>
