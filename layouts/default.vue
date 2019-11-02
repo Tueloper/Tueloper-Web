@@ -1,7 +1,7 @@
 <template>
   <div>
     <Loader v-if="loading"/>
-    <div v-else>
+    <div class="home-two-style" v-else>
       <Header/>
       <nuxt />
       <Footer/>

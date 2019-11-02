@@ -1,10 +1,106 @@
-/* =================================
-------------------------------------
-  Civic - CV Resume
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
+/*---------------------
+	Home 2 Style
+-----------------------*/
+.home-two-style {
+	background-image: url(../img/home-2-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-color: #009fff;
+}
 
+.home-two-style .header-section,
+.home-two-style .hero-section,
+.home-two-style .social-section,
+.home-two-style .review-slider .owl-dots .owl-dot,
+.home-two-style .site-btn,
+.home-two-style .fact-box,
+.home-two-style .social-links,
+.home-two-style .social-section .social-link-warp h2 {
+	background-color: transparent;
+}
+
+.home-two-style h1,
+.home-two-style h2,
+.home-two-style h3,
+.home-two-style h4,
+.home-two-style h5,
+.home-two-style h6,
+.home-two-style p,
+.home-two-style .site-logo h2 a,
+.home-two-style .site-logo p,
+.home-two-style .hero-info ul li,
+.home-two-style .hero-info ul li span,
+.home-two-style .single-review .qut,
+.home-two-style .site-btn,
+.home-two-style .social-section .social-links a,
+.home-two-style .contact-form input,
+.home-two-style .contact-form textarea,
+.home-two-style .circle-progress .prog-title p,
+.home-two-style .circle-progress .prog-title h3,
+.home-two-style .circle-progress .progress-info h2 {
+	color: #fff !important;
+}
+
+.home-two-style .section-title h2:after,
+.home-two-style .review-slider .owl-dots .owl-dot.active {
+	background: #fff;
+}
+
+.home-two-style .resume-list,
+.home-two-style .resume-list li:after,
+.home-two-style .review-slider .owl-dots .owl-dot,
+.home-two-style .site-btn,
+.home-two-style .contact-form input,
+.home-two-style .contact-form textarea {
+	border-color: #fff;
+}
+
+.home-two-style .hero-image {
+	padding-left: 0px;
+	padding-top: 200px;
+}
+
+.home-two-style .hero-image img {
+	-webkit-box-shadow: 6px 20px 50px rgba(0, 0, 0, 0.5294117647);
+	        box-shadow: 6px 20px 50px rgba(0, 0, 0, 0.5294117647);
+}
+
+.home-two-style .resume-list li:after {
+	background: #009fff;
+}
+
+.home-two-style .circle-progress .progress-info {
+	background: #50bcfd;
+}
+
+.home-two-style .fact-box {
+	border: 2px solid #fff;
+}
+
+.home-two-style .fact-box.trans {
+	border: none;
+}
+
+.home-two-style .footer-section {
+	background: #3b4caf;
+}
+
+.home-two-style .contact-form ::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.home-two-style .contact-form :-ms-input-placeholder {
+	color: #fff;
+}
+
+.home-two-style .contact-form ::-ms-input-placeholder {
+	color: #fff;
+}
+
+.home-two-style .contact-form ::placeholder {
+	color: #fff;
+}
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/

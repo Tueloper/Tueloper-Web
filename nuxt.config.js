@@ -12,7 +12,9 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico.png' },
+      { rel: 'stylesheet', type: 'font', href: 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700' }
+
     ]
   },
   /*
@@ -23,7 +25,7 @@ export default {
     height: '4px',
     duration: 5000,
     throttle: 200
-   },
+  },
   /*
   ** Global CSS
   */
