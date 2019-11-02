@@ -2,7 +2,7 @@
   <div>
     	<div class="footer-section">
         <div class="text-center">
-          Copyright &copy;<span style="color: #f2f7f8">{{date}}</span>  All rights reserved Tueloper loves <i class="fa fa-heart-o" aria-hidden="true"></i> You!!.....
+          Copyright &copy;<span style="color: #f2f7f8">{{date}}</span>  All rights reserved Tueloper loves <i class="fa fa-heart" aria-hidden="true"></i> You!!.....
         </div>
     </div>
   </div>
