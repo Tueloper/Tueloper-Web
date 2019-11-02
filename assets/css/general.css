@@ -1,10 +1,107 @@
-/* =================================
-------------------------------------
-  Civic - CV Resume
-  Version: 1.0
- ------------------------------------ 
- ====================================*/
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700';
+/*---------------------
+	Home 2 Style
+-----------------------*/
+.home-two-style {
+	background-image: url(../img/home-2-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	background-color: #009fff;
+}
 
+.home-two-style .header-section,
+.home-two-style .hero-section,
+.home-two-style .social-section,
+.home-two-style .review-slider .owl-dots .owl-dot,
+.home-two-style .site-btn,
+.home-two-style .fact-box,
+.home-two-style .social-links,
+.home-two-style .social-section .social-link-warp h2 {
+	background-color: transparent;
+}
+
+.home-two-style h1,
+.home-two-style h2,
+.home-two-style h3,
+.home-two-style h4,
+.home-two-style h5,
+.home-two-style h6,
+.home-two-style p,
+.home-two-style .site-logo h2 a,
+.home-two-style .site-logo p,
+.home-two-style .hero-info ul li,
+.home-two-style .hero-info ul li span,
+.home-two-style .single-review .qut,
+.home-two-style .site-btn,
+.home-two-style .social-section .social-links a,
+.home-two-style .contact-form input,
+.home-two-style .contact-form textarea,
+.home-two-style .circle-progress .prog-title p,
+.home-two-style .circle-progress .prog-title h3,
+.home-two-style .circle-progress .progress-info h2 {
+	color: #fff !important;
+}
+
+.home-two-style .section-title h2:after,
+.home-two-style .review-slider .owl-dots .owl-dot.active {
+	background: #fff;
+}
+
+.home-two-style .resume-list,
+.home-two-style .resume-list li:after,
+.home-two-style .review-slider .owl-dots .owl-dot,
+.home-two-style .site-btn,
+.home-two-style .contact-form input,
+.home-two-style .contact-form textarea {
+	border-color: #fff;
+}
+
+.home-two-style .hero-image {
+	padding-left: 0px;
+	padding-top: 200px;
+}
+
+.home-two-style .hero-image img {
+	-webkit-box-shadow: 6px 20px 50px rgba(0, 0, 0, 0.5294117647);
+	        box-shadow: 6px 20px 50px rgba(0, 0, 0, 0.5294117647);
+}
+
+.home-two-style .resume-list li:after {
+	background: #009fff;
+}
+
+.home-two-style .circle-progress .progress-info {
+	background: #50bcfd;
+}
+
+.home-two-style .fact-box {
+	border: 2px solid #fff;
+}
+
+.home-two-style .fact-box.trans {
+	border: none;
+}
+
+.home-two-style .footer-section {
+	background: #3b4caf;
+}
+
+.home-two-style .contact-form ::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.home-two-style .contact-form :-ms-input-placeholder {
+	color: #fff;
+}
+
+.home-two-style .contact-form ::-ms-input-placeholder {
+	color: #fff;
+}
+
+.home-two-style .contact-form ::placeholder {
+	color: #fff;
+}
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
@@ -399,17 +496,18 @@ ol {
 }
 
 .hero-text h2 {
-	font-size: 170px;
+	font-size: 100px;
 	line-height: normal;
 	margin-bottom: 20px;
 }
 
 .hero-text p {
-	font-size: 33px;
-	line-height: 1.3;
+	font-size: 30px;
+	line-height: 1.1;
 }
 
 .hero-image {
+	margin-left: 40px;
 	padding-top: 70px;
 }
 
@@ -430,7 +528,7 @@ ol {
 .hero-info ul li span {
 	color: #40424a;
 	display: inline-block;
-	min-width: 220px;
+	min-width: 180px;
 }
 
 .hero-info ul li:last-child {
@@ -447,7 +545,8 @@ ol {
 
 .social-section .social-links {
 	display: inline-block;
-	background: #f9f9f9;
+	background: transparent;
+	color: white;
 	position: relative;
 	z-index: 5;
 }
@@ -695,6 +794,9 @@ ol {
 	line-height: normal;
 }
 
+i.fa fa-heart{
+	color: #ff0000 !important;
+}
 
 /* ===========================
   Responsive
@@ -707,7 +809,7 @@ ol {
 
 @media only screen and (max-width: 1600px) {
 	.hero-text h2 {
-		font-size: 120px;
+		font-size: 90px;
 	}
 }
 
@@ -732,7 +834,7 @@ ol {
 		margin-left: 10%;
 	}
 	.hero-info ul li span {
-		min-width: 180px;
+		min-width: 130px;
 	}
 	.portfolio-item .port-pic {
 		height: 310px;
@@ -772,6 +874,9 @@ ol {
 	}
 	.portfolio-item {
 		margin-bottom: 30px;
+	}
+	.hero-image {
+		margin-left: 0px;
 	}
 }
 
@@ -825,10 +930,16 @@ ol {
 	.hero-info ul li span {
 		display: block;
 	}
+	.hero-image {
+		margin-left: 0px;
+	}
 }
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
+	.hero-image {
+		margin-left: 0px;
+	}
 	.icon-box {
 		margin-right: 30px;
 		text-align: left;
@@ -899,6 +1010,9 @@ ol {
 
 /* small Mobile :320px. */
 @media only screen and (max-width: 479px) {
+	.hero-image {
+		margin-left: 0px;
+	}
 	.hero-text h2 {
 		font-size: 50px;
 	}

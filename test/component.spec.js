@@ -1,14 +1,8 @@
 import { mount } from '@vue/test-utils'
-import Logo from '@/components/Logo.vue'
 import Header from '@/components/template/header.vue'
 import Loader from '@/components/page_loader.vue'
-
-describe('Logo', () => {
-  test('is a Vue instance', () => {
-    const wrapper = mount(Logo)
-    expect(wrapper.isVueInstance()).toBeTruthy()
-  })
-})
+import About from '@/components/landing/about.vue'
+import Socials from '@/components/landing/socials.vue'
 
 describe('Header', () => {
   test('is a Vue Instance', () => {
@@ -20,6 +14,20 @@ describe('Header', () => {
 describe('Loader', () => {
   test('is a Vue Instance', () => {
     const wrapper = mount(Loader)
+    expect(wrapper.isVueInstance()).toBeTruthy()
+  })
+});
+
+describe('About', () => {
+  test('is a Vue Instance', () => {
+    const wrapper = mount(About)
+    expect(wrapper.isVueInstance()).toBeTruthy()
+  })
+});
+
+describe('Socials', () => {
+  test('is a Vue Instance', () => {
+    const wrapper = mount(Socials)
     expect(wrapper.isVueInstance()).toBeTruthy()
   })
 });
