@@ -9,7 +9,7 @@
 							<div class="col-lg-6">
 								<div class="hero-text">
 									<h2>Tochukwu Ozurumba</h2>
-									<p>I’m a quite an interesting Backend frontend Software Develper who is a JS addict.</p>
+									<p>I’m a quite an interesting Backend frontend Software Developer who is a JS addict.</p>
 								</div>
 								<div class="hero-info">
 									<h2>General Info</h2>
