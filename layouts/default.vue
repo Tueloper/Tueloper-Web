@@ -10,7 +10,7 @@
 </template>
 <script>
 
-import Header from './../components/template/header'
+import Header from './../components/template/headerP'
 import Footer from './../components/template/footer'
 import Loader from './../components/page_loader'
 export default {
@@ -27,7 +27,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.loading = false
-    }, 2000)
+    }, 1000)
   }
 }
 </script>
