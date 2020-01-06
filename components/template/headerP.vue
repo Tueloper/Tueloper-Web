@@ -39,9 +39,6 @@ export default {
 </script>
 
 <style scoped>
-nav {
-  /* font-family: 'Source Sans Pro', sans-serif; */
-}
 .navbar {
   padding: 0% !important;
 }
@@ -61,12 +58,41 @@ nav {
   /* font-weight: 600; */
 }
 
+.header-container li .nav-link:hover {
+  color: #000;
+}
+
+.header-container li .nav-link:focus {
+  color: #000;
+}
+
+/* .header-container li .nav-link:visited {
+  color: #000;
+} */
+
+.header-container li .nav-link:active {
+  color: #000;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #000000 !important;
+  background-color: #fff !important;
+}
+
 .header-container li .blog {
   color: rgb(255, 255, 255);
   background: rgb(16, 16, 16);
   margin-left: 5px;
   border-radius: 0;
   font-weight: 500;
-  padding: 2px 13px;
+  padding: 2px 13px 4px;
+}
+
+.header-container li .blog:hover {
+  color: rgb(16, 16, 16);
+  background: #fff;
+  border: 1px solid rgb(16, 16, 16);
+  border-radius: 4px;
 }
 </style>
