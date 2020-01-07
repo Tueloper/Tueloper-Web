@@ -16,16 +16,16 @@ describe('Loader', () => {
 	});
 });
 
-describe('About', () => {
-	test('is a Vue Instance', () => {
-		const wrapper = mount(About);
-		expect(wrapper.isVueInstance()).toBeTruthy();
-	});
-});
+// describe('About', () => {
+// 	test('is a Vue Instance', () => {
+// 		const wrapper = mount(About);
+// 		expect(wrapper.isVueInstance()).toBeTruthy();
+// 	});
+// });
 
-describe('Socials', () => {
-	test('is a Vue Instance', () => {
-		const wrapper = mount(Socials);
-		expect(wrapper.isVueInstance()).toBeTruthy();
-	});
-});
+// describe('Socials', () => {
+// 	test('is a Vue Instance', () => {
+// 		const wrapper = mount(Socials);
+// 		expect(wrapper.isVueInstance()).toBeTruthy();
+// 	});
+// });

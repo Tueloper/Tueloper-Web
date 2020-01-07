@@ -17,7 +17,26 @@ export default {
 				type: 'font',
 				href: 'https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans+SC|Poppins|Questrial&display=swap'
 			}
+			// {
+			// 	rel: 'stylesheet',
+			// 	href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
+			// }
 		]
+
+		// script: [
+		// 	{
+		// 		src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+		// 		type: 'text/javascript'
+		// 	},
+		// 	{
+		// 		src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+		// 		type: 'text/javascript'
+		// 	},
+		// 	{
+		// 		src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+		// 		type: 'text/javascript'
+		// 	}
+		// ]
 	},
 	/*
   ** Customize the progress-bar color

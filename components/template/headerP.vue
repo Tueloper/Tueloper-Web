@@ -1,46 +1,73 @@
 <template>
   <div>
     <!-- Header section start -->
-    <nav id="navbar-example2" class="navbar navbar-light">
-      <div class="container header-container">
-        <nuxt-link class="navbar-brand text-dark" to="/">
+    <b-navbar ref="navbar" class="navbar" toggleable="lg" type="light" fixed="top">
+      <div class="container">
+        <b-navbar-brand href="/">
           <img src="./../../assets/img/favicon.ico.png" alt="TUE" />
-        </nuxt-link>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <nuxt-link class="nav-link" to="#Home">Home</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link class="nav-link" to="#About">About</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link class="nav-link" to="#Skills">Skills</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link class="nav-link" to="#Projects">Projects</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link class="nav-link" to="#Contact">Contact</nuxt-link>
-          </li>
-          <li class="nav-item">
-            <nuxt-link class="nav-link blog" to="#Blog">Blog</nuxt-link>
-          </li>
-        </ul>
+        </b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+        <b-collapse id="nav-collapse" is-nav>
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+            <b-nav-item href="#Home">
+              Home
+              <span class="sr-only navba">(current)</span>
+            </b-nav-item>
+            <b-nav-item class="navba" href="#About">About</b-nav-item>
+            <b-nav-item class="navba" href="#Skills">Skills</b-nav-item>
+
+            <b-nav-item class="navba" href="#Projects">Projects</b-nav-item>
+
+            <b-nav-item class="navba" href="#Contact">Contact</b-nav-item>
+
+            <b-nav-item class="blog text-white" href="#Blog">Blog</b-nav-item>
+          </b-navbar-nav>
+        </b-collapse>
       </div>
-    </nav>
+    </b-navbar>
+
     <!-- Header section end -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'headerP'
+  name: 'headerP',
+
+  mounted() {
+    const navbar = this.$refs['navbar']
+    window.onscroll = function() {
+      if (
+        document.body.scrollTop < 0 ||
+        document.documentElement.scrollTop > 5
+      ) {
+        navbar.classList.add('navTransparent')
+        navbar.classList.remove('navbar')
+      } else {
+        navbar.classList.add('navbar')
+        navbar.classList.remove('navTransparent')
+      }
+    }
+  }
 }
 </script>
 
 <style scoped>
 .navbar {
-  padding: 0% !important;
+  padding: 10px 0px !important;
+  background: #ffffff;
+  color: rgb(102, 102, 102);
+}
+
+.navTransparent {
+  background: #000000;
+  display: flex;
+  color: rgb(250, 249, 249);
+  border-bottom: 1px solid black;
+  box-shadow: 0, 0, 0, 0.5, black;
 }
 .navbar-brand img {
   height: 50px;
@@ -50,49 +77,43 @@ export default {
   border-radius: 2px;
 }
 
-.header-container li .nav-link {
+.navba {
   font-size: 16px;
   color: rgb(102, 102, 102);
-  padding: 0px 10px;
+  padding: 0px;
   text-decoration: none;
-  /* font-weight: 600; */
 }
 
-.header-container li .nav-link:hover {
+.navba:hover {
   color: #000;
 }
 
-.header-container li .nav-link:focus {
+.navba:focus {
   color: #000;
 }
 
-/* .header-container li .nav-link:visited {
-  color: #000;
-} */
-
-.header-container li .nav-link:active {
+.navba:active {
   color: #000;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #000000 !important;
-  background-color: #fff !important;
-}
-
-.header-container li .blog {
-  color: rgb(255, 255, 255);
-  background: rgb(16, 16, 16);
+.blog {
+  color: rgb(255, 255, 255) !important;
+  background: transparent;
   margin-left: 5px;
+  border: 1px solid black;
   border-radius: 0;
   font-weight: 500;
-  padding: 2px 13px 4px;
+  padding: 0px 8px 2px;
 }
 
-.header-container li .blog:hover {
-  color: rgb(16, 16, 16);
-  background: #fff;
+.blog:hover {
+  color: rgb(251, 250, 250);
+  background: rgb(0, 0, 0);
   border: 1px solid rgb(16, 16, 16);
-  border-radius: 4px;
+  border-radius: 5px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255);
 }
 </style>

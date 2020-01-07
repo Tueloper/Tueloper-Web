@@ -1,7 +1,14 @@
 <template>
-  <div></div>
+  <div>
+    <Banner />
+  </div>
 </template>
 
 <script>
-export default {}
+import Banner from './../components/landing/banner'
+export default {
+  components: {
+    Banner
+  }
+}
 </script>

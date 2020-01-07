@@ -35,7 +35,7 @@ export default {
 
 <style>
 html {
-  font-family: 'Questrial', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'Source sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
