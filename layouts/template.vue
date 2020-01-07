@@ -1,14 +1,15 @@
 <template>
   <div>
-    <Loader v-if="loading" />
-    <div v-else>
-      <Header />
+    <Loader v-if="loading"/>
+    <div class="home-two-style" v-else>
+      <Header/>
       <nuxt />
-      <Footer />
+      <Footer/>
     </div>
   </div>
 </template>
 <script>
+
 import Header from './../components/template/headerP'
 import Footer from './../components/template/footer'
 import Loader from './../components/page_loader'
@@ -20,9 +21,7 @@ export default {
   },
 
   components: {
-    Header,
-    Footer,
-    Loader
+    Header, Footer, Loader
   },
 
   mounted() {
@@ -35,9 +34,9 @@ export default {
 
 <style>
 html {
-  font-family: 'Source sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  /* font-size: 16px; */
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -46,20 +45,15 @@ html {
   box-sizing: border-box;
 }
 
-.fadeOut {
-  animation-name: fadeOut;
-}
 
-.banner {
-  height: 99.5vh;
-}
+.fadeOut {
+  animation-name: fadeOut; }
 
 @keyframes fadeOut {
   0% {
-    opacity: 1;
-  }
+    opacity: 1; }
   100% {
-    opacity: 0;
-  }
+    opacity: 0; } 
 }
+
 </style>

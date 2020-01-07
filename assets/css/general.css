@@ -1,114 +1,12 @@
-@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700';
-/*---------------------
-	Home 2 Style
------------------------*/
-.home-two-style {
-	background-image: url(../img/home-2-bg.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-	background-color: #009fff;
-}
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:400, 400i, 600, 600i, 700';
 
-.home-two-style .header-section,
-.home-two-style .hero-section,
-.home-two-style .social-section,
-.home-two-style .review-slider .owl-dots .owl-dot,
-.home-two-style .site-btn,
-.home-two-style .fact-box,
-.home-two-style .social-links,
-.home-two-style .social-section .social-link-warp h2 {
-	background-color: transparent;
-}
-
-.home-two-style h1,
-.home-two-style h2,
-.home-two-style h3,
-.home-two-style h4,
-.home-two-style h5,
-.home-two-style h6,
-.home-two-style p,
-.home-two-style .site-logo h2 a,
-.home-two-style .site-logo p,
-.home-two-style .hero-info ul li,
-.home-two-style .hero-info ul li span,
-.home-two-style .single-review .qut,
-.home-two-style .site-btn,
-.home-two-style .social-section .social-links a,
-.home-two-style .contact-form input,
-.home-two-style .contact-form textarea,
-.home-two-style .circle-progress .prog-title p,
-.home-two-style .circle-progress .prog-title h3,
-.home-two-style .circle-progress .progress-info h2 {
-	color: #fff !important;
-}
-
-.home-two-style .section-title h2:after,
-.home-two-style .review-slider .owl-dots .owl-dot.active {
-	background: #fff;
-}
-
-.home-two-style .resume-list,
-.home-two-style .resume-list li:after,
-.home-two-style .review-slider .owl-dots .owl-dot,
-.home-two-style .site-btn,
-.home-two-style .contact-form input,
-.home-two-style .contact-form textarea {
-	border-color: #fff;
-}
-
-.home-two-style .hero-image {
-	padding-left: 0px;
-	padding-top: 200px;
-}
-
-.home-two-style .hero-image img {
-	-webkit-box-shadow: 6px 20px 50px rgba(0, 0, 0, 0.5294117647);
-	        box-shadow: 6px 20px 50px rgba(0, 0, 0, 0.5294117647);
-}
-
-.home-two-style .resume-list li:after {
-	background: #009fff;
-}
-
-.home-two-style .circle-progress .progress-info {
-	background: #50bcfd;
-}
-
-.home-two-style .fact-box {
-	border: 2px solid #fff;
-}
-
-.home-two-style .fact-box.trans {
-	border: none;
-}
-
-.home-two-style .footer-section {
-	background: #3b4caf;
-}
-
-.home-two-style .contact-form ::-webkit-input-placeholder {
-	color: #fff;
-}
-
-.home-two-style .contact-form :-ms-input-placeholder {
-	color: #fff;
-}
-
-.home-two-style .contact-form ::-ms-input-placeholder {
-	color: #fff;
-}
-
-.home-two-style .contact-form ::placeholder {
-	color: #fff;
-}
 /*----------------------------------------*/
 /* Template default CSS
 /*----------------------------------------*/
 html,
 body {
 	height: 100%;
-	font-family: 'Josefin Sans', sans-serif;
+	/* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 h1,
@@ -117,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: #40424a;
+	color: #030303;
 	margin: 0;
 	font-weight: 600;
 	font-family: 'Josefin Sans', sans-serif;
@@ -138,7 +36,7 @@ p {
 }
 
 img {
-	max-width: 100%;
+	max-width: 89%;
 }
 
 input:focus,
@@ -164,8 +62,8 @@ ol {
 	Helper CSS
 -----------------------*/
 .spad {
-	padding-top: 125px;
-	padding-bottom: 110px;
+	padding-top: 155px;
+	padding-bottom: 70px;
 }
 
 .section-title h2 {
@@ -224,15 +122,15 @@ ol {
 @keyframes loader {
 	0% {
 		-webkit-transform: rotate(0deg);
-		        transform: rotate(0deg);
+		transform: rotate(0deg);
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
-		        transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
-		        transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
 }
 
@@ -488,51 +386,31 @@ ol {
 	Hero section
 -----------------------*/
 .hero-section {
-	background: #f2f7f8;
+	background: #ffffff;
 }
 
 .hero-text {
-	margin-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .hero-text h2 {
-	font-size: 100px;
+	font-size: 60px;
 	line-height: normal;
-	margin-bottom: 20px;
 }
 
 .hero-text p {
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 1.1;
 }
 
 .hero-image {
 	margin-left: 40px;
-	padding-top: 70px;
 }
 
-.hero-info h2 {
-	margin-bottom: 30px;
-}
-
-.hero-info ul {
-	list-style: none;
-}
-
-.hero-info ul li {
-	font-size: 24px;
-	color: #808181;
-	margin-bottom: 15px;
-}
-
-.hero-info ul li span {
-	color: #40424a;
-	display: inline-block;
-	min-width: 180px;
-}
-
-.hero-info ul li:last-child {
-	margin-bottom: 0;
+.hero-section {
+	border-bottom: 0.08px solid rgb(149, 149, 149);
 }
 
 /*---------------------
@@ -780,7 +658,7 @@ ol {
 	Footer section
 -----------------------*/
 .footer-section {
-	background: #40424a;
+	background: #0e0d0d;
 	color: white;
 	padding: 20px 0;
 	font-size: 14px;
@@ -793,7 +671,7 @@ ol {
 	line-height: normal;
 }
 
-i.fa fa-heart{
+i.fa fa-heart {
 	color: #ff0000 !important;
 }
 
@@ -808,18 +686,8 @@ i.fa fa-heart{
 
 @media only screen and (max-width: 1600px) {
 	.hero-text h2 {
-		font-size: 90px;
-	}
-}
-
-@media only screen and (max-width: 1450px) {
-	.home-five-style .header-section {
-		position: relative;
-		background: #f2f7f8;
-	}
-	.home-six-style .header-section {
-		position: relative;
-		background: #009fff;
+		font-size: 70px;
+		margin: 50px 0 20px;
 	}
 }
 
@@ -837,16 +705,6 @@ i.fa fa-heart{
 	}
 	.portfolio-item .port-pic {
 		height: 310px;
-	}
-	.home-three-style .header-section {
-		padding: 50px 30px;
-	}
-	.home-three-style .main-left-area {
-		padding-right: 30px;
-		padding-left: 30px;
-	}
-	.home-three-style .main-right-area {
-		padding-left: 100px;
 	}
 }
 
@@ -944,7 +802,9 @@ i.fa fa-heart{
 		text-align: left;
 	}
 	.hero-text h2 {
-		font-size: 80px;
+		font-size: 50px;
+		margin: 40px 0 20px;
+		text-align: center;
 	}
 	.portfolio-warp {
 		padding: 0;
@@ -1014,6 +874,8 @@ i.fa fa-heart{
 	}
 	.hero-text h2 {
 		font-size: 50px;
+		margin: 30px 0 20px;
+		text-align: center;
 	}
 	.hero-info ul li {
 		font-size: 18px;

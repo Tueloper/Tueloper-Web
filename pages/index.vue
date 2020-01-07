@@ -1,24 +1,19 @@
 <template>
   <div>
-    <About/>    
-    <Socials/>    
-    <Education/> 
-    <Skills/> 
-    <Contact/> 
+    <About />
+    <Socials />
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import About from '~/components/landing/about.vue'
-import Socials from '~/components/landing/socials.vue'
-import Education from '~/components/landing/education.vue'
-import Contact from '~/components/landing/contact.vue'
-import Skills from '~/components/landing/skills.vue'
-
+import Banner from './../components/landing/banner'
+import About from './../components/landing/about'
+import Socials from './../components/landing/socials'
 export default {
   components: {
-    Logo, About, Socials, Education, Contact, Skills
+    Banner,
+    About,
+    Socials
   }
 }
 </script>
