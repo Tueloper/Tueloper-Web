@@ -2,14 +2,17 @@
   <div>
     <div id="Home" class="intro">
       <h3>Hi,</h3>
-      <h4>
+      <h1>
         I am
         <strong>Tochukwu Ozurumba 😁,</strong>
-      </h4>
+      </h1>
       <h5>And Am A</h5>
-      <h1>
+      <h1 class="profession">
         <span class="text_1">Frontend Developer.</span>
         <span class="text_2">Backend Developer.</span>
+        <span class="text_3">Javascript Advocate.</span>
+        <span class="text_4">Software Deveelopment Trainer.</span>
+        <span class="text_5">Environmental Technologist.</span>
       </h1>
       <p
         class="typwriter"
@@ -33,12 +36,17 @@
 .intro {
   height: 95vh;
   text-align: center;
-  margin: 150px auto 50px;
+  margin: 210px auto 50px;
   color: black;
 }
 
 h1 {
   font-size: 30px;
+}
+
+.profession {
+  margin: 20px 0;
+  font-size: 60px;
 }
 
 .text_1 {
@@ -49,8 +57,23 @@ h1 {
   animation: text2;
 }
 
+.text_3 {
+  animation: text3;
+}
+
+.text_4 {
+  animation: text4;
+}
+
+.text_5 {
+  animation: text5;
+}
+
 .text_1,
-.text_2 {
+.text_2,
+.text_3,
+.text_4,
+.text_5 {
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
@@ -61,7 +84,10 @@ h1 {
 }
 
 .text_1::after,
-.text_2::after {
+.text_2::after,
+.text_3::after,
+.text_4::after,
+.text_5::after {
   content: '|';
   position: absolute;
   right: 0;
@@ -79,7 +105,7 @@ h1 {
 
   60%,
   90% {
-    width: 21.2em;
+    width: 10.2em;
   }
 }
 
@@ -91,7 +117,43 @@ h1 {
   }
   10%,
   40% {
-    width: 17em;
+    width: 10em;
+  }
+}
+
+@keyframes text3 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  20%,
+  50% {
+    width: 10em;
+  }
+}
+
+@keyframes text4 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 10em;
+  }
+}
+
+@keyframes text5 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  10%,
+  40% {
+    width: 10em;
   }
 }
 
