@@ -184,7 +184,7 @@ ol {
 }
 
 .circle-progress .progress-info {
-	background: #f2f7f8;
+	background: #e0e0e0;
 	width: 127px;
 	height: 127px;
 	border-radius: 150px;
@@ -194,7 +194,7 @@ ol {
 
 .circle-progress .progress-info h2 {
 	font-size: 36px;
-	color: #40424a !important;
+	color: #000000 !important;
 }
 
 .circle-progress .prog-title {
@@ -236,7 +236,7 @@ ol {
 	height: 375px;
 	display: table;
 	width: 100%;
-	background: #40424a;
+	background: #0c0c0c;
 }
 
 .fact-box.trans {
@@ -459,6 +459,15 @@ ol {
 	background: #cbcbcb;
 }
 
+/*---------------------
+	Extra section
+-----------------------*/
+.extra-section {
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
 /*---------------------
 	Resume section
 ----------------------*/

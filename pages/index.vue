@@ -2,6 +2,7 @@
   <div>
     <About />
     <Socials />
+    <Accomplishment />
   </div>
 </template>
 
@@ -9,11 +10,13 @@
 import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 import Socials from './../components/landing/socials'
+import Accomplishment from './../components/landing/accomplishment'
 export default {
   components: {
     Banner,
     About,
-    Socials
+    Socials,
+    Accomplishment
   }
 }
 </script>
