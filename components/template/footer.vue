@@ -1,9 +1,11 @@
 <template>
   <div>
-    	<div class="footer-section">
-        <div class="text-center">
-          Copyright &copy;<span style="color: #f2f7f8">{{date}}</span>  All rights reserved Tueloper loves <i class="fa fa-heart" aria-hidden="true"></i> You!!.....
-        </div>
+    <div class="footer-section">
+      <div class="text-center">
+        Copyright &copy;
+        <span>{{date}}</span> All rights reserved Tueloper loves
+        <i class="fa fa-heart" aria-hidden="true"></i> You!!.....
+      </div>
     </div>
   </div>
 </template>
