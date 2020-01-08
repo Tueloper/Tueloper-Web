@@ -1,7 +1,9 @@
 <template>
   <div>
     <b-card class="animated bounceInUp p-full" id="Projects">
-      <h1 class="text-white text-center p-header animated bounceInDown">Projects</h1>
+      <h1 class="text-white text-center p-header animated bounceInDown">
+        Projects
+      </h1>
       <b-tabs content-class="mt-3" justified>
         <b-tab title="Meetup App">
           <div class="row animated bounceInLeft p-row">
@@ -12,16 +14,26 @@
                   <b-badge href="#" class="badg" variant="light">Vue</b-badge>
                   <b-badge href="#" class="badg" variant="light">HTML</b-badge>
                   <b-badge href="#" class="badg" variant="light">CSS</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Firebase</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Vuetify</b-badge>
+                  <b-badge href="#" class="badg" variant="light"
+                    >Firebase</b-badge
+                  >
+                  <b-badge href="#" class="badg" variant="light"
+                    >Vuetify</b-badge
+                  >
                 </div>
 
                 <div class="p-info">
-                  <strong>Description:</strong> implified bugtracker tool. Allows managing and maintaining list of issues. Frontend build with ReactJS, Redux and Bootstrap. Data is served through REST api, built with Express JS, secured with JWT and HelmetJS. Data is stored in MongoDB.
+                  <strong>Description:</strong> implified bugtracker tool.
+                  Allows managing and maintaining list of issues. Frontend build
+                  with ReactJS, Redux and Bootstrap. Data is served through REST
+                  api, built with Express JS, secured with JWT and HelmetJS.
+                  Data is stored in MongoDB.
                 </div>
 
                 <div class="p-buttons">
-                  <b-button class="btn b-source-btn" href="#" target="_blank">Demo</b-button>
+                  <b-button class="btn b-source-btn" href="#" target="_blank"
+                    >Demo</b-button
+                  >
                   <b-button
                     class="btn b-source-btn"
                     href="https://rotaract-meetup-app.firebaseapp.com/"
@@ -45,16 +57,26 @@
                   <b-badge href="#" class="badg" variant="light">Vue</b-badge>
                   <b-badge href="#" class="badg" variant="light">HTML</b-badge>
                   <b-badge href="#" class="badg" variant="light">CSS</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Firebase</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Vuetify</b-badge>
+                  <b-badge href="#" class="badg" variant="light"
+                    >Firebase</b-badge
+                  >
+                  <b-badge href="#" class="badg" variant="light"
+                    >Vuetify</b-badge
+                  >
                 </div>
 
                 <div class="p-info">
-                  <strong>Description:</strong> implified bugtracker tool. Allows managing and maintaining list of issues. Frontend build with ReactJS, Redux and Bootstrap. Data is served through REST api, built with Express JS, secured with JWT and HelmetJS. Data is stored in MongoDB.
+                  <strong>Description:</strong> implified bugtracker tool.
+                  Allows managing and maintaining list of issues. Frontend build
+                  with ReactJS, Redux and Bootstrap. Data is served through REST
+                  api, built with Express JS, secured with JWT and HelmetJS.
+                  Data is stored in MongoDB.
                 </div>
 
                 <div class="p-buttons">
-                  <b-button class="btn b-source-btn" href="#" target="_blank">Demo</b-button>
+                  <b-button class="btn b-source-btn" href="#" target="_blank"
+                    >Demo</b-button
+                  >
                   <b-button
                     class="btn b-source-btn"
                     href="https://rotaract-meetup-app.firebaseapp.com/"
@@ -78,16 +100,26 @@
                   <b-badge href="#" class="badg" variant="light">Vue</b-badge>
                   <b-badge href="#" class="badg" variant="light">HTML</b-badge>
                   <b-badge href="#" class="badg" variant="light">CSS</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Firebase</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Vuetify</b-badge>
+                  <b-badge href="#" class="badg" variant="light"
+                    >Firebase</b-badge
+                  >
+                  <b-badge href="#" class="badg" variant="light"
+                    >Vuetify</b-badge
+                  >
                 </div>
 
                 <div class="p-info">
-                  <strong>Description:</strong> implified bugtracker tool. Allows managing and maintaining list of issues. Frontend build with ReactJS, Redux and Bootstrap. Data is served through REST api, built with Express JS, secured with JWT and HelmetJS. Data is stored in MongoDB.
+                  <strong>Description:</strong> implified bugtracker tool.
+                  Allows managing and maintaining list of issues. Frontend build
+                  with ReactJS, Redux and Bootstrap. Data is served through REST
+                  api, built with Express JS, secured with JWT and HelmetJS.
+                  Data is stored in MongoDB.
                 </div>
 
                 <div class="p-buttons">
-                  <b-button class="btn b-source-btn" href="#" target="_blank">Demo</b-button>
+                  <b-button class="btn b-source-btn" href="#" target="_blank"
+                    >Demo</b-button
+                  >
                   <b-button
                     class="btn b-source-btn"
                     href="https://rotaract-meetup-app.firebaseapp.com/"
@@ -111,16 +143,26 @@
                   <b-badge href="#" class="badg" variant="light">Vue</b-badge>
                   <b-badge href="#" class="badg" variant="light">HTML</b-badge>
                   <b-badge href="#" class="badg" variant="light">CSS</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Firebase</b-badge>
-                  <b-badge href="#" class="badg" variant="light">Vuetify</b-badge>
+                  <b-badge href="#" class="badg" variant="light"
+                    >Firebase</b-badge
+                  >
+                  <b-badge href="#" class="badg" variant="light"
+                    >Vuetify</b-badge
+                  >
                 </div>
 
                 <div class="p-info">
-                  <strong>Description:</strong> implified bugtracker tool. Allows managing and maintaining list of issues. Frontend build with ReactJS, Redux and Bootstrap. Data is served through REST api, built with Express JS, secured with JWT and HelmetJS. Data is stored in MongoDB.
+                  <strong>Description:</strong> implified bugtracker tool.
+                  Allows managing and maintaining list of issues. Frontend build
+                  with ReactJS, Redux and Bootstrap. Data is served through REST
+                  api, built with Express JS, secured with JWT and HelmetJS.
+                  Data is stored in MongoDB.
                 </div>
 
                 <div class="p-buttons">
-                  <b-button class="btn b-source-btn" href="#" target="_blank">Demo</b-button>
+                  <b-button class="btn b-source-btn" href="#" target="_blank"
+                    >Demo</b-button
+                  >
                   <b-button
                     class="btn b-source-btn"
                     href="https://rotaract-meetup-app.firebaseapp.com/"
@@ -142,7 +184,7 @@
 
 <style scoped>
 .p-full {
-  background: #000;
+  background: #0e0d0d;
   border: none !important;
   color: #f8f9fa;
   height: 100vh;

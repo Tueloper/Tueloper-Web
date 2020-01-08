@@ -1,33 +1,52 @@
 <template>
   <div>
     <!-- Header section start -->
-    <b-navbar ref="navbar" class="navbar" toggleable="lg" type="light" fixed="top">
-      <div class="container">
-        <b-navbar-brand href="/">
+    <nav ref="navbar" class="navbar fixed-top navbar-expand-lg bg-light">
+      <div class="container header-container">
+        <nuxt-link class="navbar-brand text-dark" to="/">
           <img src="./../../assets/img/favicon.ico.png" alt="TUE" />
-        </b-navbar-brand>
+        </nuxt-link>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item active">
+              <nuxt-link class="nav-link" to="#Home"
+                >Home <span class="sr-only">(current)</span></nuxt-link
+              >
+            </li> -->
+            <li class="nav-item active">
+              <nuxt-link class="nav-link" to="#About">About</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link" to="#Skills">Skills</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link" to="#Projects">Projects</nuxt-link>
+            </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link" to="#Contact">Contact</nuxt-link>
+            </li>
+          </ul>
 
-        <b-collapse id="nav-collapse" is-nav>
-          <!-- Right aligned nav items -->
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#Home">
-              Home
-              <span class="sr-only navba">(current)</span>
-            </b-nav-item>
-            <b-nav-item class="navba" href="#About">About</b-nav-item>
-            <b-nav-item class="navba" href="#Skills">Skills</b-nav-item>
-
-            <b-nav-item class="navba" href="#Projects">Projects</b-nav-item>
-
-            <b-nav-item class="navba" href="#Contact">Contact</b-nav-item>
-
-            <b-nav-item class="blog text-white" href="#Blog">Blog</b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
+          <nuxt-link class="nav-link" to="/blog">
+            <button class="btn btn-outline-dark blog my-2 my-sm-0 blog">
+              Blog
+            </button>
+          </nuxt-link>
+        </div>
       </div>
-    </b-navbar>
+    </nav>
 
     <!-- Header section end -->
   </div>
@@ -39,16 +58,31 @@ export default {
 
   mounted() {
     const navbar = this.$refs['navbar']
+    const links = navbar.querySelectorAll('a')
+    const btn_i = navbar.querySelector('.blog')
+    // return console.log(btn_i)
     window.onscroll = function() {
       if (
         document.body.scrollTop < 0 ||
         document.documentElement.scrollTop > 5
       ) {
-        navbar.classList.add('navTransparent')
-        navbar.classList.remove('navbar')
+        navbar.classList.add('bg-dark', 'navbar-dark', 'shadow')
+        navbar.classList.remove('bg-light', 'navbar-dark', 'shadow')
+        links.forEach(link => {
+          link.classList.add('nav-black')
+          link.classList.remove('nav-link')
+        })
+        btn_i.classList.remove('btn-outline-dark', 'blog')
+        btn_i.classList.add('btn-outline-light', 'blog_i')
       } else {
-        navbar.classList.add('navbar')
-        navbar.classList.remove('navTransparent')
+        navbar.classList.add('bg-light', 'navbar-dark', 'shadow')
+        navbar.classList.remove('bg-dark', 'navbar-dark', 'shadow')
+        links.forEach(link => {
+          link.classList.add('nav-link')
+          link.classList.remove('nav-black')
+        })
+        btn_i.classList.remove('btn-outline-light', 'blog_i')
+        btn_i.classList.add('btn-outline-dark', 'blog')
       }
     }
   }
@@ -57,17 +91,7 @@ export default {
 
 <style scoped>
 .navbar {
-  padding: 10px 0px !important;
-  background: #ffffff;
-  color: rgb(102, 102, 102);
-}
-
-.navTransparent {
-  background: #000000;
-  display: flex;
-  color: rgb(250, 249, 249);
-  border-bottom: 1px solid black;
-  box-shadow: 0, 0, 0, 0.5, black;
+  padding: 0% !important;
 }
 .navbar-brand img {
   height: 50px;
@@ -77,43 +101,60 @@ export default {
   border-radius: 2px;
 }
 
-.navba {
+.header-container li .nav-link {
   font-size: 16px;
   color: rgb(102, 102, 102);
-  padding: 0px;
+  padding: 0px 10px;
   text-decoration: none;
+  /* font-weight: 600; */
 }
 
-.navba:hover {
-  color: #000;
-}
-
-.navba:focus {
-  color: #000;
-}
-
-.navba:active {
-  color: #000;
+.header-container li .nav-black {
+  font-size: 16px;
+  color: rgb(102, 102, 102);
+  padding: 0px 10px;
+  text-decoration: none;
+  /* font-weight: 600; */
 }
 
 .blog {
-  color: rgb(255, 255, 255) !important;
-  background: transparent;
+  color: rgb(255, 255, 255);
+  background: rgb(16, 16, 16);
   margin-left: 5px;
-  border: 1px solid black;
   border-radius: 0;
   font-weight: 500;
-  padding: 0px 8px 2px;
+  padding: 2px 13px 4px;
 }
 
 .blog:hover {
-  color: rgb(251, 250, 250);
-  background: rgb(0, 0, 0);
+  color: rgb(16, 16, 16);
+  background: #fff;
   border: 1px solid rgb(16, 16, 16);
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
-.nav-link {
-  color: rgba(255, 255, 255);
+.blog_i {
+  color: rgb(16, 16, 16);
+  background: #fff;
+  margin-left: 5px;
+  border-radius: 0;
+  font-weight: 500;
+  padding: 2px 13px 4px;
+}
+
+.bg-light {
+  background: #fff !important;
+}
+
+.bg-dark {
+  background: #0e0d0d !important;
+}
+
+.nav-black {
+  color: #fff !important;
+}
+
+.blacknav:hover {
+  color: rgb(102, 102, 102) !important;
 }
 </style>

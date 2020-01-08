@@ -1,9 +1,9 @@
 <template>
   <div>
     <About />
-    <Socials />
     <Projects />
-    <Accomplishment />
+    <!-- <Accomplishment /> -->
+    <Socials />
     <Contact />
   </div>
 </template>
@@ -12,7 +12,7 @@
 import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 import Socials from './../components/landing/socials'
-import Accomplishment from './../components/landing/accomplishment'
+// import Accomplishment from './../components/landing/accomplishment'
 import Projects from './../components/landing/project'
 import Contact from './../components/landing/contact'
 export default {
@@ -20,7 +20,7 @@ export default {
     Banner,
     About,
     Socials,
-    Accomplishment,
+    // Accomplishment,
     Projects,
     Contact
   }
