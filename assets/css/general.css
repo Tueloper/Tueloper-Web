@@ -620,6 +620,9 @@ ol {
 /*---------------------
 	Contact section
 -----------------------*/
+.contact-section {
+	border-top: 0.04px solid #ccc;
+}
 .contact-form {
 	display: block;
 	width: 100%;
