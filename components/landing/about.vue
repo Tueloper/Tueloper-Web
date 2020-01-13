@@ -59,20 +59,27 @@
   margin: 0 10px 0 0;
 }
 .btn-g {
-  background-color: black;
+  background-color: white;
   width: 180px;
   height: 50px;
-  color: white;
+  color: black;
+  border: 3px solid #000000;
 }
 
 .btn-g:hover {
-  background: white;
+  background: black;
   border: 3px solid #000000;
-  color: #000000;
+  color: #ffffff;
 }
 
 .b-icon {
   display: inline;
   padding: 0 2px;
+}
+
+.btn:focus,
+.btn.focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 </style>
