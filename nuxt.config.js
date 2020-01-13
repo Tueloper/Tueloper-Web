@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 export default {
 	mode: 'universal',
 	/*
@@ -21,22 +22,22 @@ export default {
 			// 	rel: 'stylesheet',
 			// 	href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
 			// }
-		],
-
-		script: [
-			{
-				src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
-				type: 'text/javascript'
-			},
-			{
-				src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
-				type: 'text/javascript'
-			},
-			{
-				src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
-				type: 'text/javascript'
-			}
 		]
+
+		// script: [
+		// 	{
+		// 		src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+		// 		type: 'text/javascript'
+		// 	},
+		// 	{
+		// 		src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+		// 		type: 'text/javascript'
+		// 	},
+		// 	{
+		// 		src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+		// 		type: 'text/javascript'
+		// 	}
+		// ]
 	},
 	/*
   ** Customize the progress-bar color
@@ -50,11 +51,40 @@ export default {
 	/*
   ** Global CSS
   */
-	css: [ '@/assets/css/general.css', '@/assets/css/font.css', '@/assets/css/animate.css' ],
+	css: [
+		'@/assets/css/general.css',
+		'@/assets/css/font.css',
+		'@/assets/css/animate.css'
+		// '~/node_modules/bootstrap/dist/css/bootstrap.css'
+	],
 	/*
   ** Plugins to load before mounting the App
   */
-	plugins: [],
+	// plugins: [ '~plugins/bootstrap.js' ],
+	build: {
+		/**
+			* add external plugins
+			*/
+		// vendor: [ 'jquery', 'bootstrap' ],
+		// plugins: [
+		// 	new webpack.ProvidePlugin({
+		// 		$: 'jquery'
+		// 	})
+		// ],
+		/*
+		** Run ESLint on save
+		// */
+		// extend(config, { isDev, isClient }) {
+		// 	if (isDev && isClient) {
+		// 		config.module.rules.push({
+		// 			enforce: 'pre',
+		// 			test: /\.(js|vue)$/,
+		// 			loader: 'eslint-loader',
+		// 			exclude: /(node_modules)/
+		// 		});
+		// 	}
+		// }
+	},
 	/*
   ** Nuxt.js dev-modules
   */
@@ -104,7 +134,7 @@ export default {
 
 	router: {
 		linkActiveClass: 'active'
-	},
+	}
 
 	// transistion: {
 	//   //a means of using animations within the page
@@ -120,10 +150,4 @@ export default {
 	/*
   ** Build configuration
   */
-	build: {
-		/*
-    ** You can extend webpack config here
-    */
-		extend(config, ctx) {}
-	}
 };
