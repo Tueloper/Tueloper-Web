@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 export default {
 	mode: 'universal',
 	/*
@@ -50,11 +51,40 @@ export default {
 	/*
   ** Global CSS
   */
-	css: [ '@/assets/css/general.css', '@/assets/css/font.css' ],
+	css: [
+		'@/assets/css/general.css',
+		'@/assets/css/font.css',
+		'@/assets/css/animate.css'
+		// '~/node_modules/bootstrap/dist/css/bootstrap.css'
+	],
 	/*
   ** Plugins to load before mounting the App
   */
-	plugins: [],
+	// plugins: [ '~plugins/bootstrap.js' ],
+	build: {
+		/**
+			* add external plugins
+			*/
+		// vendor: [ 'jquery', 'bootstrap' ],
+		// plugins: [
+		// 	new webpack.ProvidePlugin({
+		// 		$: 'jquery'
+		// 	})
+		// ],
+		/*
+		** Run ESLint on save
+		// */
+		// extend(config, { isDev, isClient }) {
+		// 	if (isDev && isClient) {
+		// 		config.module.rules.push({
+		// 			enforce: 'pre',
+		// 			test: /\.(js|vue)$/,
+		// 			loader: 'eslint-loader',
+		// 			exclude: /(node_modules)/
+		// 		});
+		// 	}
+		// }
+	},
 	/*
   ** Nuxt.js dev-modules
   */
@@ -104,7 +134,7 @@ export default {
 
 	router: {
 		linkActiveClass: 'active'
-	},
+	}
 
 	// transistion: {
 	//   //a means of using animations within the page
@@ -120,10 +150,4 @@ export default {
 	/*
   ** Build configuration
   */
-	build: {
-		/*
-    ** You can extend webpack config here
-    */
-		extend(config, ctx) {}
-	}
 };

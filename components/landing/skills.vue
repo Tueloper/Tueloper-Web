@@ -1,73 +1,92 @@
 <template>
   <div>
-    	<section class="extra-section spad pb-0">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xl-8 offset-xl-2">
-						<div class="section-title">
-							<h2>Extra Skills</h2>
-						</div>
-						<div class="row">
-							<div class="col-lg-3 col-md-6 pt-5">
-								<div class="fact-box trans">
-									<div class="fact-content">
-										<div class="circle-progress">
-											<div id="progress3" class="prog-circle"></div>
-											<div class="progress-info">
-												<h2>85%</h2>
-											</div>
-											<div class="prog-title">
-												<h3>Communication</h3>
-												<p>Willing to work with others</p>
-											</div>			
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6 pt-5">
-								<div class="fact-box trans">
-									<div class="fact-content">
-										<div class="circle-progress">
-											<div id="progress4" class="prog-circle"></div>
-											<div class="progress-info">
-												<h2>83%</h2>
-											</div>
-											<div class="prog-title">
-												<h3>Hardworking</h3>
-												<p>Very Eager to work & Learn.</p>
-											</div>			
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="fact-box">
-									<div class="fact-content">
-										<img src="../../assets/img/icon/1-w.png" alt="">
-										<h2>3</h2>
-										<p>Years of Experience</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-3 col-md-6">
-								<div class="fact-box">
-									<div class="fact-content">
-										<img src="../../assets/img/icon/2-w.png" alt="">
-										<h2>5</h2>
-										<p>Certficates Gained</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <div class="animated slideInLeft sk-full" id="Skills">
+      <div class="row">
+        <div class="col-md-5 col-sm-12 col-xs-12 sk-head">
+          <h1>Skills</h1>
+          <p>Find Out the Various Accumulated Skills</p>
+        </div>
+        <div class="col-md-7 col-sm-12 col-xs-12 sk-details">
+          <div class="sk-info">
+            <h3>Frontend</h3>
+            <ul>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+            </ul>
+          </div>
+          <div class="sk-info">
+            <h3>Backend</h3>
+            <ul>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+              <li>
+                Build amazing jobs with VueJs, Vuex, Nuxt and Js frameworks
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-	name: 'skills'
+<style scoped>
+.sk-full {
+  overflow-x: hidden;
+  padding: 100px 90px 80px;
 }
-</script>
+
+.sk-head {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: center;
+  height: 76vh;
+  border-right: 1px solid #666666;
+}
+
+.sk-head h1 {
+  font-size: 60px;
+  font-family: 'Josefin Sans', sans-serif, 'cursive';
+  font-weight: 500;
+}
+
+.sk-head p {
+  border-top: 3px solid #000000;
+}
+
+.sk-details {
+  padding: 80px;
+}
+
+.sk-info {
+  margin-bottom: 50px;
+}
+
+.sk-info ul li {
+  list-style-type: lower-greek;
+}
+</style>
