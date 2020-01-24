@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="col-lg-3 col-md-3">
-      <div class="fact-box">
+      <div class="fact-box" :class="{'bg-red': isHover}">
         <div class="fact-content">
           <h1>{{item.heading}}</h1>
           <h2>{{item.id}}</h2>
@@ -15,12 +15,19 @@
 <script>
 export default {
   name: 'todos',
-  props: ['item']
+  props: ['item'],
+  data() {
+    return {
+      isHover: false
+    }
+  },
+
+  mounted() {}
 }
 </script>
 
 <style scoped>
-/* .fact-box {
-  width: auto;
-} */
+.bg-red {
+  background-color: red !important;
+}
 </style>

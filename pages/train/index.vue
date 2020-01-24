@@ -3,8 +3,8 @@
     <div class="text-center bg-dark welcome p-3">
       <h3>{{welcome}}</h3>
     </div>
-    <button class="btn btn-outline-dark" @click="showCaseToggle">Click Me</button>
-    <div v-if="showCase" v-bind:title="message">Hover On me</div>
+    <button class="btn btn-outline-dark" @click.prevent="showCaseToggle">Click Me</button>
+    <a v-if="showCase" :title="message" :[attributeName]="url">Hover On me</a>
 
     <!-- for loop directive -->
     <ul>
@@ -18,16 +18,21 @@
     <div class="row flex justify-content-center">
       <todoItem v-for="list in groceryList" :item="list" :key="list.id" />
     </div>
+
+    <!-- <div class="text-center">
+      <quiz />
+    </div>-->
   </div>
 </template>
 <script>
 import todoItem from './../../components/training/todos'
-
+import quiz from './../../components/training/quiz'
 export default {
   layout: 'blog',
 
   components: {
-    todoItem
+    todoItem,
+    quiz
   },
 
   data() {
@@ -36,7 +41,7 @@ export default {
       message: `This was loaded at ${new Date().toLocaleString()}`,
       showCase: false,
       todos: [{ text: 'Learn Javascript' }, { text: 'Learn Vue' }],
-      display: this.display,
+      display: '',
       groceryList: [
         { id: 0, text: 'Vegetables', heading: 'VegiHead' },
         { id: 1, text: 'Cheese', heading: 'CheeseHead' },
@@ -45,7 +50,9 @@ export default {
           text: 'Whatever else humans are supposed to eat',
           heading: 'WhateverHead'
         }
-      ]
+      ],
+      url: '/',
+      attributeName: 'href'
     }
   },
 
