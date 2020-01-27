@@ -1,7 +1,11 @@
 <template>
   <div>
     <!-- Header section start -->
-    <nav ref="navbar" class="navbar fixed-top navbar-expand-lg bg-light">
+    <nav
+      ref="navbar"
+      class="navbar fixed-top navbar-expand-lg"
+      :class="[ scroller ? backgroundBlack : backgroundLight]"
+    >
       <div class="container header-container">
         <nuxt-link class="navbar-brand text-dark" to="/">
           <img src="./../../assets/img/favicon.ico.png" alt="TUE" />
@@ -24,25 +28,23 @@
               <nuxt-link class="nav-link" to="#Home"
                 >Home <span class="sr-only">(current)</span></nuxt-link
               >
-            </li> -->
+            </li>-->
             <li class="nav-item active">
-              <nuxt-link class="nav-link" to="#About">About</nuxt-link>
+              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#About">About</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link" to="#Skills">Skills</nuxt-link>
+              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#Skills">Skills</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link" to="#Projects">Projects</nuxt-link>
+              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#Projects">Projects</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link" to="#Contact">Contact</nuxt-link>
+              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#Contact">Contact</nuxt-link>
             </li>
           </ul>
 
-          <nuxt-link class="nav-link" to="/blog">
-            <button class="btn btn-outline-dark blog my-2 my-sm-0 blog">
-              Blog
-            </button>
+          <nuxt-link :class="[ scroller ? navBlack : navLink]" to="/blog">
+            <button class="btn my-2 my-sm-0" :class="[ scroller ? buttonWhite : buttonBlack ]">Blog</button>
           </nuxt-link>
         </div>
       </div>
@@ -56,33 +58,37 @@
 export default {
   name: 'headerP',
 
+  data() {
+    return {
+      isScrolling: false,
+      backgroundBlack: ['bg-dark', 'navbar-dark', 'shadow'],
+      backgroundLight: ['bg-light'],
+      navLink: 'nav-link',
+      navBlack: 'nav-black',
+      buttonBlack: ['btn-outline-dark', 'blog'],
+      buttonWhite: ['btn-outline-light', 'blog_i']
+    }
+  },
+
   mounted() {
-    const navbar = this.$refs['navbar']
-    const links = navbar.querySelectorAll('a')
-    const btn_i = navbar.querySelector('.blog')
-    // return console.log(btn_i)
-    window.onscroll = function() {
+    document.addEventListener('scroll', this.scrollFunction)
+  },
+
+  computed: {
+    scroller() {
+      return this.isScrolling
+    }
+  },
+
+  methods: {
+    scrollFunction() {
       if (
         document.body.scrollTop < 0 ||
         document.documentElement.scrollTop > 5
       ) {
-        navbar.classList.add('bg-dark', 'navbar-dark', 'shadow')
-        navbar.classList.remove('bg-light', 'navbar-dark', 'shadow')
-        links.forEach(link => {
-          link.classList.add('nav-black')
-          link.classList.remove('nav-link')
-        })
-        btn_i.classList.remove('btn-outline-dark', 'blog')
-        btn_i.classList.add('btn-outline-light', 'blog_i')
+        return (this.isScrolling = true)
       } else {
-        navbar.classList.add('bg-light', 'navbar-dark', 'shadow')
-        navbar.classList.remove('bg-dark', 'navbar-dark', 'shadow')
-        links.forEach(link => {
-          link.classList.add('nav-link')
-          link.classList.remove('nav-black')
-        })
-        btn_i.classList.remove('btn-outline-light', 'blog_i')
-        btn_i.classList.add('btn-outline-dark', 'blog')
+        return (this.isScrolling = false)
       }
     }
   }

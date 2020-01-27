@@ -5,7 +5,7 @@
         Projects
       </h1>
       <b-tabs content-class="mt-3" justified>
-        <b-tab title="Meetup App">
+        <b-tab title="Meetup App" id="meet">
           <div class="row animated bounceInLeft p-row">
             <div class="col-md-7 col-xs-12 p-details my-auto">
               <div>
@@ -23,20 +23,24 @@
                 </div>
 
                 <div class="p-info">
-                  <strong>Description:</strong> implified bugtracker tool.
-                  Allows managing and maintaining list of issues. Frontend build
-                  with ReactJS, Redux and Bootstrap. Data is served through REST
-                  api, built with Express JS, secured with JWT and HelmetJS.
-                  Data is stored in MongoDB.
+                  <strong>Description:</strong> Meetup Application that allows
+                  each User to create Meetups with locations and date for the
+                  meetup. Also other members using the application can attend
+                  the meetup. Frontend build with VueJs and Vuetify. Data is
+                  served through REST api, built with Firebase. Data is also
+                  stored in Firebase.
                 </div>
 
                 <div class="p-buttons">
-                  <b-button class="btn b-source-btn" href="#" target="_blank"
+                  <b-button
+                    class="btn b-source-btn"
+                    href="https://rotaract-meetup-app.firebaseapp.com/"
+                    target="_blank"
                     >Demo</b-button
                   >
                   <b-button
                     class="btn b-source-btn"
-                    href="https://rotaract-meetup-app.firebaseapp.com/"
+                    href="https://github.com/rotaract-meetup-app"
                     target="_blank"
                   >
                     <i class="fa fa-github b-icon"></i>
@@ -66,20 +70,24 @@
                 </div>
 
                 <div class="p-info">
-                  <strong>Description:</strong> implified bugtracker tool.
-                  Allows managing and maintaining list of issues. Frontend build
-                  with ReactJS, Redux and Bootstrap. Data is served through REST
-                  api, built with Express JS, secured with JWT and HelmetJS.
-                  Data is stored in MongoDB.
+                  <strong>Description:</strong> Meetup Application that allows
+                  each User to create Meetups with locations and date for the
+                  meetup. Also other members using the application can attend
+                  the meetup. Frontend build with VueJs and Vuetify. Data is
+                  served through REST api, built with Firebase. Data is also
+                  stored in Firebase.
                 </div>
 
                 <div class="p-buttons">
-                  <b-button class="btn b-source-btn" href="#" target="_blank"
+                  <b-button
+                    class="btn b-source-btn"
+                    href="https://rotaract-meetup-app.firebaseapp.com/"
+                    target="_blank"
                     >Demo</b-button
                   >
                   <b-button
                     class="btn b-source-btn"
-                    href="https://rotaract-meetup-app.firebaseapp.com/"
+                    href="https://github.com/rotaract-meetup-app"
                     target="_blank"
                   >
                     <i class="fa fa-github b-icon"></i>
@@ -236,17 +244,19 @@
   font-size: 14px;
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  color: #fff;
-  background-color: #fff;
+.nav-tabs .nav-link {
   border: none;
+  border-radius: 0 !important;
 }
 
 .nav-tabs .nav-link {
-  color: #fff !important;
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  color: rgb(255, 255, 255) !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: white !important ;
+  border-bottom: 5px solid !important;
+  background-color: transparent !important;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 </style>
