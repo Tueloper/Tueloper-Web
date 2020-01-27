@@ -57,12 +57,31 @@
         v-on:enlarge="postFontSize += $event"
       />
     </div>
+
+    <!-- using basic slot component -->
+    <segmeted>
+      <template v-slot:header>
+        <Header />
+      </template>
+
+      <template #default>
+        <About />
+      </template>
+
+      <template #footer>
+        <Footer />
+      </template>
+    </segmeted>
   </div>
 </template>
 <script>
 import todoItem from './../../components/training/todos'
 import Blog from './../../components/training/blog'
 import todoLoop from './../../components/training/loop'
+import segmeted from './../../components/training/slot'
+import About from './../../components/landing/about'
+import Header from './../../components/template/headerP'
+import Footer from './../../components/template/footer'
 
 export default {
   layout: 'blog',
@@ -70,7 +89,11 @@ export default {
   components: {
     todoItem,
     Blog,
-    todoLoop
+    todoLoop,
+    segmeted,
+    About,
+    Footer,
+    Header
   },
 
   data() {
@@ -125,7 +148,8 @@ export default {
           content: 'This is where i learnt some crazy things'
         }
       ],
-      postFontSize: 1
+      postFontSize: 1,
+      title: ''
     }
   },
 
