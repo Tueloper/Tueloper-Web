@@ -4,8 +4,12 @@
     <div v-else>
       <Header />
       <nuxt />
-      <div ref="btnn" class="btnn animated bounceInUp 2s">
-        <div @click.prevent="topFunction" id="myBtn" title="Go to top">
+      <div
+        ref="btnn"
+        class="btnn animated bounceInUp 2s"
+        :style="[ scroller ? { display: displayShow } : { display: displayFalse } ]"
+      >
+        <div @click.prevent="topFunction" id="myBtn" :title="top">
           <i class="fa fa-arrow-up animated jello infinite"></i>
         </div>
       </div>
@@ -20,7 +24,11 @@ import Loader from './../components/page_loader'
 export default {
   data() {
     return {
-      loading: true
+      loading: true,
+      top: 'Go to top',
+      scrollData: false,
+      displayShow: 'block',
+      displayFalse: 'none'
     }
   },
 
@@ -38,28 +46,22 @@ export default {
     document.addEventListener('scroll', this.scrollFunction)
   },
 
-  destroyed() {
-    window.removeEventListener('scroll', this.scrollFunction)
+  computed: {
+    scroller() {
+      return this.scrollData
+    }
   },
-
-  watch: {},
 
   methods: {
     scrollFunction() {
-      const btnTop = this.$refs['btnn']
-      // return console.log(btnTop)
       if (
         document.body.scrollTop > 0 ||
         document.documentElement.scrollTop > 20
       ) {
-        btnTop.style.display = 'block'
+        return (this.scrollData = true)
       } else {
-        btnTop.style.display = 'none'
+        return (this.scrollData = false)
       }
-    },
-
-    seen() {
-      console.log('i am seeennn')
     },
 
     topFunction() {
