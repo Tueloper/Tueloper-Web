@@ -43,8 +43,14 @@
             </li>
           </ul>
 
-          <nuxt-link :class="[ scroller ? navBlack : navLink]" to="/blog">
-            <button class="btn my-2 my-sm-0" :class="[ scroller ? buttonWhite : buttonBlack ]">Blog</button>
+          <nuxt-link
+            :class="[ scroller ? navBlack : navLink]"
+            to="./../../assets/img/TochukwuOzurumbaResume.pdf"
+          >
+            <button
+              class="btn my-2 my-sm-0"
+              :class="[ scroller ? buttonWhite : buttonBlack ]"
+            >Resume</button>
           </nuxt-link>
         </div>
       </div>
