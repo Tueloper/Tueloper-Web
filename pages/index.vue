@@ -37,12 +37,6 @@
       <Projects />
       <Contact />
     </div>
-
-    <div class="column emailly">
-      <div class="mode">
-        <p>ozurumbatochukwu@yahoo.com</p>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -81,26 +75,11 @@ body {
 }
 
 .data {
-  width: 76%;
+  width: 75%;
 }
 
 .icons {
-  width: 12%;
-}
-
-.emailly {
-  width: 9%;
-  position: absolute;
-  /* float: right; */
-  top: 65%;
-  right: 10%;
-  /* transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%); */
-}
-
-.mode {
-  text-orientation: upright;
+  width: 15%;
 }
 
 /* Clear floats after the columns */
@@ -114,7 +93,7 @@ body {
   width: 10%;
   position: fixed;
   top: 53%;
-  margin-left: 40px;
+  margin-left: 65px;
   text-decoration: none;
   list-style-type: none;
 }
