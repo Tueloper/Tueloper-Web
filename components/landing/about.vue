@@ -15,26 +15,6 @@
                     Environmental Technologist & A Safety Officer.
                   </p>
                 </div>
-                <div>
-                  <a
-                    href="https://github.com/Tueloper"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button class="btn btn-g" href="#" target="_blank">
-                      <i class="fa fa-github b-icon"></i> Github Profile
-                    </button>
-                  </a>
-                  <a
-                    href="https://getcv.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button class="btn btn-g" href="#" target="_blank">
-                      Download Cv
-                    </button>
-                  </a>
-                </div>
               </div>
               <div class="col-lg-6 text-md-center">
                 <figure class="hero-image">

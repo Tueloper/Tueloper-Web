@@ -6,7 +6,7 @@
       class="navbar fixed-top navbar-expand-lg"
       :class="[ scroller ? backgroundBlack : backgroundLight]"
     >
-      <div class="container header-container">
+      <div class="container-fluid header-container">
         <nuxt-link class="navbar-brand text-dark" to="/">
           <img src="./../../assets/img/favicon.ico.png" alt="TUE" />
         </nuxt-link>
@@ -24,11 +24,12 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-              <nuxt-link class="nav-link" to="#Home"
-                >Home <span class="sr-only">(current)</span></nuxt-link
-              >
-            </li>-->
+            <li class="nav-item active">
+              <nuxt-link class="nav-link" to="#Home">
+                Home
+                <span class="sr-only">(current)</span>
+              </nuxt-link>
+            </li>
             <li class="nav-item active">
               <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#About">About</nuxt-link>
             </li>
@@ -43,8 +44,14 @@
             </li>
           </ul>
 
-          <nuxt-link :class="[ scroller ? navBlack : navLink]" to="/blog">
-            <button class="btn my-2 my-sm-0" :class="[ scroller ? buttonWhite : buttonBlack ]">Blog</button>
+          <nuxt-link
+            :class="[ scroller ? navBlack : navLink]"
+            to="./../../assets/img/TochukwuOzurumbaResume.pdf"
+          >
+            <button
+              class="btn my-2 my-sm-0"
+              :class="[ scroller ? buttonWhite : buttonBlack ]"
+            >Resume</button>
           </nuxt-link>
         </div>
       </div>
@@ -96,10 +103,8 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  padding: 0% !important;
-}
 .navbar-brand img {
+  margin-left: 15px;
   height: 50px;
   width: 40px;
   padding: 5px 0px;
@@ -153,7 +158,7 @@ export default {
 }
 
 .bg-dark {
-  background: #0e0d0d !important;
+  background: rgb(16, 16, 16) !important;
 }
 
 .nav-black {

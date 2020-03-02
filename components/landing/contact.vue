@@ -26,11 +26,7 @@
                   <input type="text" placeholder="telephone" />
                 </div>
                 <div class="col-xl-12">
-                  <textarea
-                    placeholder="message"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
+                  <textarea placeholder="message" cols="30" rows="10"></textarea>
                   <input type="submit" value="send message" />
                 </div>
               </div>
