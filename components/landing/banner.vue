@@ -10,17 +10,17 @@
       <h1 class="profession">
         <span class="text_1">Frontend Developer.</span>
         <span class="text_2">Backend Developer.</span>
-        <span class="text_3">Javascript Advocate.</span>
-        <span class="text_4">Software Deveelopment Trainer.</span>
-        <span class="text_5">Environmental Technologist.</span>
+        <!-- <span class="text_3">Javascript Advocate.</span> -->
+        <!-- <span class="text_4">Software Deveelopment Trainer.</span> -->
+        <!-- <span class="text_5">Environmental Technologist.</span> -->
       </h1>
-      <p
+      <!-- <p
         class="typwriter"
         data-period="2000"
         data-type="[
-        'Frontend Developer.', '', 'Javascript Advocate.', 'Software Deveelopment Trainer.', 'Environmental Technologist.', 'Safety Officer.' 
+        'Frontend Developer.', , 'Javascript Advocate.', 'Software Deveelopment Trainer.', 'Environmental Technologist.', 'Safety Officer.'
       ]"
-      ></p>
+      ></p>-->
 
       <div class="container">
         <span class="circle">
@@ -78,7 +78,7 @@ h1 {
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-timing-function: steps(15, end);
   animation-iteration-count: infinite;
 }
@@ -92,7 +92,7 @@ h1 {
   position: absolute;
   right: 0;
   animation: caret infinite;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-timing-function: steps(1, end);
 }
 
@@ -170,12 +170,12 @@ h1 {
 * {
   box-sizing: border-box;
 }
-.container {
+/* .container {
   height: 120px;
   width: 120px;
   margin: 150px auto 0;
   position: relative;
-}
+} */
 /* .circle {
   background-color: #fff;
   height: 120px;

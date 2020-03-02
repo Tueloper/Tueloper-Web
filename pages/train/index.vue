@@ -31,7 +31,7 @@
     <div v-else>There are numbers less 2</div>
 
     <ul v-for="set in sets" :key="set.id">
-      <li v-for="n in even(set)">{{ n }}</li>
+      <li v-for="n in even(set)" :key="n">{{ n }}</li>
     </ul>
 
     <todoLoop>

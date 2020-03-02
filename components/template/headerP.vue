@@ -6,7 +6,7 @@
       class="navbar fixed-top navbar-expand-lg"
       :class="[ scroller ? backgroundBlack : backgroundLight]"
     >
-      <div class="container header-container">
+      <div class="container-fluid header-container">
         <nuxt-link class="navbar-brand text-dark" to="/">
           <img src="./../../assets/img/favicon.ico.png" alt="TUE" />
         </nuxt-link>
@@ -96,10 +96,8 @@ export default {
 </script>
 
 <style scoped>
-.navbar {
-  padding: 0% !important;
-}
 .navbar-brand img {
+  margin-left: 15px;
   height: 50px;
   width: 40px;
   padding: 5px 0px;
@@ -153,7 +151,7 @@ export default {
 }
 
 .bg-dark {
-  background: #0e0d0d !important;
+  background: rgb(16, 16, 16) !important;
 }
 
 .nav-black {
