@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div id="Home" class="intro">
+  <div id="Home">
+    <div class="intro">
       <p class="hi">Hi, my name is</p>
       <p class="name">Tochukwu Ozurumba</p>
       <p class="build">I Build Things For The Web</p>
@@ -37,11 +37,10 @@
 
 <style scoped>
 .intro {
-  height: 95vh;
-  margin: 130px 0 0 170px;
-  font-family: Calibre, 'San Francisco', 'SF Pro Text', -apple-system, system-ui,
-    BlinkMacSystemFont, Roboto, 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+  height: 90vh;
+  font-family: 'Poppins';
   color: #000;
+  margin: 170px 50px 50px;
 }
 
 .hi {

@@ -24,11 +24,12 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-              <nuxt-link class="nav-link" to="#Home"
-                >Home <span class="sr-only">(current)</span></nuxt-link
-              >
-            </li>-->
+            <li class="nav-item active">
+              <nuxt-link class="nav-link" to="#Home">
+                Home
+                <span class="sr-only">(current)</span>
+              </nuxt-link>
+            </li>
             <li class="nav-item active">
               <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#About">About</nuxt-link>
             </li>
