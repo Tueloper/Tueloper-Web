@@ -9,8 +9,18 @@
           </div>
           <div class="col-xs-6">
             <hr />
-            <p>Hello! I'm Tochukwu aka Tueloper, a web developer based in Lagos, Nigeria. I enjoy building things that live on the internet. I develop exceptional websites and web apps that provide intuitive, pixel-perfect user interfaces with efficient and modern backends.</p>
-            <p>Shortly after i started my National Youth Service i started programing, and since then have worked with teams as a developer, Trainer, Community Builder and Have hosted bootcamps where developers are groomed.</p>
+            <p>
+              Hello! I'm Tochukwu aka Tueloper, a web developer based in Lagos,
+              Nigeria. I enjoy building things that live on the internet. I
+              develop exceptional websites and web apps that provide intuitive,
+              pixel-perfect user interfaces with efficient and modern backends.
+            </p>
+            <p>
+              Shortly after i started my National Youth Service i started
+              programing, and since then have worked with teams as a developer,
+              Trainer, Community Builder and Have hosted bootcamps where
+              developers are groomed.
+            </p>
             <p>Here are a few technologies i've working with recently:</p>
             <div class="row full-stack">
               <div class="col-md-6">
@@ -29,14 +39,20 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xs-12"></div>
+        <div class="col-md-6 col-xs-12 imgDiv">
+          <img
+            src="./../../assets/img/_47A2188.jpg"
+            alt="Tueloper"
+            class="tochi-img img-responsive"
+          />
+        </div>
       </div>
     </section>
     <!-- Hero section end -->
   </div>
 </template>
 
-<style  scoped>
+<style scoped>
 #About {
   height: 80vh;
   margin: 10px 0;
@@ -59,5 +75,18 @@
 }
 .stack li {
   list-style-type: square;
+  font-size: 15px;
+  color: #808181;
+}
+
+.tochi-img {
+  width: 60%;
+  height: 70%;
+}
+
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
