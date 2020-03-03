@@ -2,8 +2,8 @@
   <div>
     <!-- Hero section start -->
     <section id="About">
-      <div class="row about animated slideInUp">
-        <div class="col-md-6 col-xs-12 about-text">
+      <div class="row about res_about animated slideInUp">
+        <div class="col-md-6 col-sm-12 about-text">
           <div class="col-xs-6">
             <h3>About</h3>
           </div>
@@ -66,6 +66,7 @@
 
 .about-text {
   padding: 10px;
+  width: 100%;
 }
 
 .about p {
@@ -90,5 +91,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  #About {
+    height: 75vh;
+    margin: 100px 0 50px;
+  }
+
+  .imgDiv {
+    display: none;
+  }
+
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about-text {
+    padding: 20px 50px;
+  }
 }
 </style>
