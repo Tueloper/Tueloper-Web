@@ -112,4 +112,21 @@ body {
   color: rgb(161, 154, 154);
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+@media only screen and (max-width: 992px) {
+  .data {
+    width: 85%;
+  }
+  .icons {
+    width: 15%;
+  }
+  .icon-bar {
+    width: 10%;
+    margin-left: 60px;
+  }
+
+  .icon-bar .fa {
+    font-size: 18px;
+  }
+}
 </style>

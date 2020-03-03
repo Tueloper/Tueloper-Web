@@ -8,16 +8,13 @@
         I am a Web Developer based in Lagos, Nigeria, specializing in building
         Expectional & A well functional
         <br />Web Products, High Quality Web Sites, using Frontend & Backend
-        Skills. Also I have Served as <br />a Web Training Officer training and
+        Skills. Also I have Served as
+        <br />a Web Training Officer training and
         building the next generation of developers.
       </p>
 
       <div>
-        <a
-          href="https://github.com/Tueloper"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/Tueloper" target="_blank" rel="noopener noreferrer">
           <button class="btn btn-g mt-4" href="#" target="_blank">
             <i class="fa fa-github b-icon"></i> Github Profile
           </button>
@@ -178,5 +175,30 @@
 .b-icon {
   display: inline;
   padding: 0 2px;
+}
+
+@media screen and (max-width: 992px) {
+  .intro {
+    height: 93vh;
+  }
+
+  .hi {
+    font-size: 19px;
+  }
+
+  .name {
+    font-size: 45px;
+  }
+
+  .build {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .intro {
+    height: 110vh;
+    margin: 120px 50px 50px;
+  }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="Contact" class="animated slideInUp">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center align-items-center">
       <div class="col-md-8 col-sm-8">
         <div class="contact-text">
           <span class="what animated slideInUp">What Next??</span>
@@ -73,5 +73,19 @@
 }
 .contact-text {
   text-align: center;
+}
+
+@media screen and (max-width: 772px) {
+  #Contact {
+    height: 92vh;
+    padding: 100px 10px;
+  }
+}
+
+@media screen and (max-width: 602px) {
+  #Contact {
+    height: 92vh;
+    padding: 100px 50px;
+  }
 }
 </style>
