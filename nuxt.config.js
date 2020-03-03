@@ -16,7 +16,8 @@ export default {
 			{
 				rel: 'stylesheet',
 				type: 'font',
-				href: 'https://fonts.googleapis.com/css?family=Josefin+Sans|Noto+Sans+SC|Poppins|Questrial&display=swap'
+				href:
+					'https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Noto+Sans+SC|Poppins|Questrial&display=swap'
 			}
 		],
 

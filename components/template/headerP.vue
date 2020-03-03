@@ -4,7 +4,7 @@
     <nav
       ref="navbar"
       class="navbar fixed-top navbar-expand-lg"
-      :class="[ scroller ? backgroundBlack : backgroundLight]"
+      :class="[scroller ? backgroundBlack : backgroundLight]"
     >
       <div class="container-fluid header-container">
         <nuxt-link class="navbar-brand text-dark" to="/">
@@ -31,28 +31,39 @@
               </nuxt-link>
             </li>
             <li class="nav-item active">
-              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#About">About</nuxt-link>
+              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#About"
+                >About</nuxt-link
+              >
             </li>
             <li class="nav-item">
-              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#Skills">Skills</nuxt-link>
+              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#Skills"
+                >Skills</nuxt-link
+              >
             </li>
             <li class="nav-item">
-              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#Projects">Projects</nuxt-link>
+              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#Projects"
+                >Projects</nuxt-link
+              >
             </li>
             <li class="nav-item">
-              <nuxt-link :class="[ scroller ? navBlack : navLink]" to="#Contact">Contact</nuxt-link>
+              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#Contact"
+                >Contact</nuxt-link
+              >
             </li>
           </ul>
 
-          <nuxt-link
-            :class="[ scroller ? navBlack : navLink]"
-            to="./../../assets/img/TochukwuOzurumbaResume.pdf"
+          <a
+            :class="[scroller ? navBlack : navLink]"
+            target="_blank"
+            href="https://res.cloudinary.com/dwtvwjhn3/raw/upload/v1579212854/TochukwuOzurumbaResume_1_ipj4as.pdf"
           >
             <button
               class="btn my-2 my-sm-0"
-              :class="[ scroller ? buttonWhite : buttonBlack ]"
-            >Resume</button>
-          </nuxt-link>
+              :class="[scroller ? buttonWhite : buttonBlack]"
+            >
+              Resume
+            </button>
+          </a>
         </div>
       </div>
     </nav>

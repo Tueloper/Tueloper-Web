@@ -2,12 +2,12 @@
   <div>
     <!-- Hero section start -->
     <section id="About">
-      <div class="row about">
+      <div class="row about animated slideInUp">
         <div class="col-md-6 col-xs-12 about-text">
           <div class="col-xs-6">
             <h4>About</h4>
           </div>
-          <div class="col-xs-6">
+          <div class="col-xs-6 animated slideInLeft">
             <hr />
             <p>
               Hello! I'm Tochukwu aka Tueloper, a web developer based in Lagos,
@@ -39,7 +39,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-xs-12 imgDiv">
+        <div class="col-md-6 col-xs-12 imgDiv animated slideInRight">
           <img
             src="./../../assets/img/_47A2188.jpg"
             alt="Tueloper"

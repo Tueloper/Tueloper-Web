@@ -1,9 +1,12 @@
 <template>
   <div class="row">
     <div class="column icons">
-      <ul class="icon-bar">
+      <ul class="icon-bar animated bounce infinite">
         <li>
-          <a href="https://web.facebook.com/Tueloper" class="facebook">
+          <a
+            href="https://web.facebook.com/Tueloper"
+            class="facebook animated slideInLeft infinite"
+          >
             <i class="fa fa-facebook"></i>
           </a>
         </li>
@@ -18,7 +21,10 @@
           </a>
         </li>
         <li class="mt-4">
-          <a href="https://www.linkedin.com/in/tochukwu-ozurumba/" class="linkedin">
+          <a
+            href="https://www.linkedin.com/in/tochukwu-ozurumba/"
+            class="linkedin"
+          >
             <i class="fa fa-linkedin"></i>
           </a>
         </li>
@@ -45,7 +51,7 @@ import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 import Projects from './../components/landing/project'
 import Contact from './../components/landing/contact'
-import Skills from './../components/landing/skills'
+import Skills from './../components/landing/work'
 export default {
   components: {
     Banner,
@@ -57,7 +63,7 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style scoped>
 * {
   box-sizing: border-box;
   overflow: hidden;
