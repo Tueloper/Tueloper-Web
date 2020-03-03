@@ -1,9 +1,9 @@
 <template>
   <div class="row">
     <div class="column icons">
-      <ul class="icon-bar">
+      <ul class="icon-bar animated bounce">
         <li>
-          <a href="https://web.facebook.com/Tueloper" class="facebook">
+          <a href="https://web.facebook.com/Tueloper" class="facebook animated slideInLeft">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
@@ -37,12 +37,6 @@
       <Projects />
       <Contact />
     </div>
-
-    <div class="column emailly">
-      <div class="mode">
-        <p>ozurumbatochukwu@yahoo.com</p>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -51,7 +45,7 @@ import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 import Projects from './../components/landing/project'
 import Contact from './../components/landing/contact'
-import Skills from './../components/landing/skills'
+import Skills from './../components/landing/work'
 export default {
   components: {
     Banner,
@@ -63,7 +57,7 @@ export default {
 }
 </script>
 
-<style  scoped>
+<style scoped>
 * {
   box-sizing: border-box;
   overflow: hidden;
@@ -81,26 +75,11 @@ body {
 }
 
 .data {
-  width: 76%;
+  width: 75%;
 }
 
 .icons {
-  width: 12%;
-}
-
-.emailly {
-  width: 9%;
-  position: absolute;
-  /* float: right; */
-  top: 65%;
-  right: 10%;
-  /* transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%); */
-}
-
-.mode {
-  text-orientation: upright;
+  width: 15%;
 }
 
 /* Clear floats after the columns */
@@ -114,7 +93,7 @@ body {
   width: 10%;
   position: fixed;
   top: 53%;
-  margin-left: 40px;
+  margin-left: 65px;
   text-decoration: none;
   list-style-type: none;
 }
@@ -129,7 +108,8 @@ body {
   color: black;
 }
 
-.icon-bar li a fa:hover {
-  background-color: rgb(161, 154, 154);
+.icon-bar li a .fa:hover {
+  color: rgb(161, 154, 154);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 </style>

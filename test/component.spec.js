@@ -4,7 +4,7 @@ import Loader from '@/components/page_loader.vue';
 import About from '@/components/landing/about';
 import Projects from '@/components/landing/project.vue';
 import Contact from '@/components/landing/contact.vue';
-import Skills from '@/components/landing/skills.vue';
+// import Skills from '@/components/landing/skills.vue';
 
 describe('Header', () => {
 	test('is a Vue Instance', () => {
@@ -34,12 +34,12 @@ describe('Projects', () => {
 	});
 });
 
-describe('Skills', () => {
-	test('is a Vue Instance', () => {
-		const wrapper = mount(Skills);
-		expect(wrapper.isVueInstance()).toBeTruthy();
-	});
-});
+// describe('Skills', () => {
+// 	test('is a Vue Instance', () => {
+// 		const wrapper = mount(Skills);
+// 		expect(wrapper.isVueInstance()).toBeTruthy();
+// 	});
+// });
 
 describe('Contact', () => {
 	test('is a Vue Instance', () => {

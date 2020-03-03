@@ -18,3 +18,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.footer-section {
+  width: 100%;
+}
+</style>
