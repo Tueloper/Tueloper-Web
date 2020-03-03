@@ -5,7 +5,7 @@
       <div class="row about animated slideInUp">
         <div class="col-md-6 col-xs-12 about-text">
           <div class="col-xs-6">
-            <h4>About</h4>
+            <h3>About</h3>
           </div>
           <div class="col-xs-6 animated slideInLeft">
             <hr />
@@ -54,8 +54,10 @@
 
 <style scoped>
 #About {
-  height: 80vh;
-  margin: 10px 0;
+  height: 95vh;
+  margin: 140px 0 50px;
+  display: flex;
+  align-items: center;
 }
 
 .about {
@@ -67,7 +69,7 @@
 }
 
 .about p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .full-stack {
@@ -75,13 +77,13 @@
 }
 .stack li {
   list-style-type: square;
-  font-size: 15px;
+  font-size: 16px;
   color: #808181;
 }
 
 .tochi-img {
   width: 60%;
-  height: 70%;
+  height: 80%;
 }
 
 .imgDiv {

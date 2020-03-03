@@ -1,12 +1,9 @@
 <template>
   <div class="row">
     <div class="column icons">
-      <ul class="icon-bar animated bounce infinite">
+      <ul class="icon-bar animated bounce">
         <li>
-          <a
-            href="https://web.facebook.com/Tueloper"
-            class="facebook animated slideInLeft infinite"
-          >
+          <a href="https://web.facebook.com/Tueloper" class="facebook animated slideInLeft">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
@@ -21,10 +18,7 @@
           </a>
         </li>
         <li class="mt-4">
-          <a
-            href="https://www.linkedin.com/in/tochukwu-ozurumba/"
-            class="linkedin"
-          >
+          <a href="https://www.linkedin.com/in/tochukwu-ozurumba/" class="linkedin">
             <i class="fa fa-linkedin"></i>
           </a>
         </li>
@@ -114,7 +108,8 @@ body {
   color: black;
 }
 
-.icon-bar li a fa:hover {
-  background-color: rgb(161, 154, 154);
+.icon-bar li a .fa:hover {
+  color: rgb(161, 154, 154);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 </style>
