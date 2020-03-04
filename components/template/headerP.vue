@@ -80,7 +80,7 @@ export default {
     return {
       isScrolling: false,
       backgroundBlack: ['bg-dark', 'navbar-dark', 'shadow'],
-      backgroundLight: ['bg-light'],
+      backgroundLight: ['bg-transparent'],
       navLink: 'nav-link',
       navBlack: 'nav-black',
       buttonBlack: ['btn-outline-dark', 'blog'],

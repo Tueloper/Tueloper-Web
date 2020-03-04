@@ -3,18 +3,21 @@
     <div class="intro animated slideInUp">
       <p class="hi">Hi, my name is</p>
       <p class="name">Tochukwu Ozurumba</p>
-      <p class="build">I Build Things For The Web</p>
+      <p class="build">I Build Products For The Web</p>
       <p class="content">
         I am a Web Developer based in Lagos, Nigeria, specializing in building
         Expectional & A well functional
         <br />Web Products, High Quality Web Sites, using Frontend & Backend
-        Skills. Also I have Served as
-        <br />a Web Training Officer training and
+        Skills. Also I have Served as <br />a Web Training Officer training and
         building the next generation of developers.
       </p>
 
       <div>
-        <a href="https://github.com/Tueloper" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/Tueloper"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button class="btn btn-g mt-4" href="#" target="_blank">
             <i class="fa fa-github b-icon"></i> Github Profile
           </button>
