@@ -1,111 +1,66 @@
 <template>
-  <div>
-    <div class="frame">
-      <slot name="picture"></slot>
-      <div class="social twitter">
-        <slot name="github"></slot>
+  <div class="card  shadow mb-3" style="max-width: 20rem">
+    <div class="card-header  head  bg-transparent ">
+      <i class="fa fa-envelope fa-3x"></i>
+      <div>
+        <a href="#">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
       </div>
-
-      <div class="social codepen">
-        <slot name="demo"></slot>
+    </div>
+    <div class="card-body ">
+      <h5 class="card-title">Success card title</h5>
+      <p class="card-text">
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </p>
+    </div>
+    <div class="card-footer bg-transparent">
+      <div class="p-badges">
+        <span class="badge badge-dark">Vue</span>
+        <span class="badge badge-dark">HTML</span>
+        <span class="badge badge-dark">CSS</span>
+        <span class="badge badge-dark">Firebase</span>
+        <span class="badge badge-dark">Vuetify</span>
       </div>
     </div>
   </div>
 </template>
 
-<style lang="scss" scoped>
-$body: #282828;
-$twitter: #55acee;
-$linkedin: #007bb5;
-$codepen: #ffdd40;
-$transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
-%focus-it {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  opacity: 0.8;
-  z-index: 1;
-  cursor: pointer;
-  i {
-    opacity: 1;
-    font-size: 20vw;
-    margin: 15vw 33vw;
-  }
+<style scoped>
+.card {
+  font-family: 'Poppins';
+  height: 23rem;
+  border-radius: 0 !important;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body {
-  width: 50%;
-  height: 300vh;
-  background-color: $body;
+.card-header {
+  border-bottom: 0 !important;
+}
+
+.card-footer {
+  border-top: 0ch !important;
+}
+/*
+.card {
+}
+
+.badg {
+  margin: 20px 1px;
+}
+
+.p-row {
+  margin: 0 50px;
+}
+
+.p-details {
+  /* height: 400px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  .frame {
-    width: 80vw;
-    height: 50vw;
-    border-radius: 5%;
-    overflow: hidden;
-    position: relative;
-    .picture {
-      width: 100%;
-      height: 100%;
-      background-image: url('https://ucarecdn.com/f138bad2-15be-4c93-a678-5018869ee28f/');
-      z-index: 0;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: $transition;
-      filter: grayscale(100%);
-    }
-    .social {
-      position: absolute;
-      right: 2vw;
-      width: 5vw;
-      height: 5vw;
-      border-radius: 50%;
-      z-index: 2;
-      a {
-        display: contents;
-        i {
-          color: white;
-          margin: 7px;
-          opacity: 0;
-        }
-      }
-      &.twitter {
-        bottom: 2vw;
-        background-color: $twitter;
-        &:hover,
-        &:focus {
-          @extend %focus-it;
-        }
-      }
-      &.linkedin {
-        bottom: 10vw;
-        background-color: $linkedin;
-        &:hover,
-        &:focus {
-          @extend %focus-it;
-        }
-      }
-      &.codepen {
-        bottom: 18vw;
-        background-color: $codepen;
-        &:hover,
-        &:focus {
-          @extend %focus-it;
-        }
-      }
-    }
-    &:hover,
-    &.focus {
-      .picture {
-        transition: $transition;
-        transform: scale(1.3) rotate(10deg);
-      }
-    }
-  }
-}
+} */
 </style>

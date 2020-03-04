@@ -91,6 +91,14 @@
   height: 80%;
 }
 
+.tochi-img::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ccc;
+  content: '';
+}
+
 .imgDiv {
   display: flex;
   justify-content: center;

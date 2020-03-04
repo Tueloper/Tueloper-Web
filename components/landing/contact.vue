@@ -11,20 +11,35 @@
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Name"
+                />
               </div>
             </div>
 
             <div class="col-md-6 col-sm-12">
               <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="name@example.com"
+                />
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 col-sm-12">
               <div class="form-group">
-                <input type="subject" class="form-control" id="subject" placeholder="Subject" />
+                <input
+                  type="subject"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Subject"
+                />
               </div>
             </div>
           </div>
@@ -41,7 +56,9 @@
             </div>
           </div>
           <div class="row d-flex justify-content-center">
-            <div class="col-md-12 col-sm-12 d-flex justify-content-center text-center">
+            <div
+              class="col-md-12 col-sm-12 d-flex justify-content-center text-center"
+            >
               <div class="form-group">
                 <button class="btn btn-outline-dark">Submit</button>
               </div>
@@ -73,6 +90,44 @@
 }
 .contact-text {
   text-align: center;
+}
+
+.form-control:focus {
+  color: #000000;
+  background-color: #fff !important;
+  border-color: #000000;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:visited {
+  background-color: #fff !important;
+}
+
+.form-control {
+  color: #000000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #414141;
+}
+button,
+input {
+  overflow: visible;
+}
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 772px) {
