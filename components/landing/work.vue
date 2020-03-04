@@ -8,295 +8,45 @@
       </div>
     </div>
     <div class="card-columns">
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <div class="card  shadow mb-3" style="max-width: 18rem;">
-        <div class="card-header  head  bg-transparent ">
-          <i class="fa fa-envelope fa-3x"></i>
-          <div>
-            <i class="fa fa-github"></i>
-          </div>
-        </div>
-        <div class="card-body ">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent">
-          <div class="p-badges">
-            <span class="badge badge-secondary">Vue</span>
-            <span class="badge badge-secondary">HTML</span>
-            <span class="badge badge-secondary">CSS</span>
-            <span class="badge badge-secondary">Firebase</span>
-            <span class="badge badge-secondary">Vuetify</span>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-      <!-- <div class="card border-success mb-3" style="max-width: 18rem;">
-        <div class="card-header bg-transparent border-success">Header</div>
-        <div class="card-body text-success">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent border-success">Footer</div>
-      </div>
-      <div class="card border-success mb-3" style="max-width: 18rem;">
-        <div class="card-header bg-transparent border-success">Header</div>
-        <div class="card-body text-success">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-        </div>
-        <div class="card-footer bg-transparent border-success">Footer</div>
-      </div>
-      <div class="card bg-danger">
-        <div class="card-body text-center">
-          <p class="card-text">Some text inside the fourth card</p>
-        </div>
-      </div>
-      <div class="card bg-light">
-        <div class="card-body text-center">
-          <p class="card-text">Some text inside the fifth card</p>
-        </div>
-      </div> -->
-      <!-- <div class="card bg-info">
-        <div class="card-body text-center">
-          <p class="card-text">Some text inside the sixth card</p>
-        </div>
-      </div> -->
+      <CardP v-for="project of projects" :key="project.id" :project="project" />
     </div>
   </div>
 </template>
 
 <script>
-const cards = [
-  {
-    front: 'The "First Computer Programmer"',
-    back: 'Ada Lovelace',
-    flipped: false
-  },
-  {
-    front: 'Invented the "Clarke Calculator"',
-    back: 'Edith Clarke',
-    flipped: false
-  },
-  {
-    front: 'Famous World War II Enigma code breaker',
-    back: 'Alan Turing',
-    flipped: false
-  },
-  {
-    front: 'Created satellite orbit analyzation software for NASA',
-    back: 'Dr. Evelyn Boyd Granville',
-    flipped: false
-  }
-]
+import CardP from './../card'
 
 export default {
-  el: '#flashcard-app',
-  data: {
-    cards: cards,
-    newFront: '',
-    newBack: '',
-    error: false
+  components: {
+    CardP
+  },
+  data() {
+    return {
+      // cards: cards,
+      // newFront: '',
+      // newBack: '',
+      // error: false,
+      projects: [
+        {
+          id: 1,
+          title: 'My journey with Vue',
+          content: 'This is where i learnt some crazy things'
+          // stacks: [Firebase]
+        },
+        {
+          id: 2,
+          title: 'Blogging with Vue',
+          content: 'This is where i learnt some crazy things'
+          // stacks: [Vue, Firebase]
+        },
+        {
+          id: 3,
+          title: 'Why Vue is so fun',
+          content: 'This is where i learnt some crazy things'
+          // stacks: [Vue, Firebase]
+        }
+      ]
+    }
   },
   methods: {
     toggleCard: function(card) {

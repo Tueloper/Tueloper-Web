@@ -51,7 +51,7 @@ import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 // import Projects from './../components/landing/project'
 import Contact from './../components/landing/contact'
-import Skills from './../components/card'
+import Skills from './../components/landing/work'
 export default {
   components: {
     Banner,
