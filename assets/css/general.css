@@ -58,6 +58,18 @@ ol {
 	margin: 0;
 }
 
+.what {
+	margin: 30px auto 0px;
+	font-size: 17px;
+	color: rgb(148, 148, 148);
+}
+
+.get {
+	font-size: 60px;
+	font-weight: 500;
+	color: black;
+}
+
 /* Preloder */
 #preloder {
 	position: fixed;

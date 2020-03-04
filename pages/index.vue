@@ -39,7 +39,7 @@
     <div class="column data">
       <Banner />
       <About />
-      <!-- <Skills /> -->
+      <Skills />
       <!-- <Projects /> -->
       <Contact />
     </div>
@@ -51,14 +51,14 @@ import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 // import Projects from './../components/landing/project'
 import Contact from './../components/landing/contact'
-// import Skills from './../components/landing/work'
+import Skills from './../components/landing/work'
 export default {
   components: {
     Banner,
     About,
     // Projects,
-    Contact
-    // Skills
+    Contact,
+    Skills
   }
 }
 </script>
@@ -96,16 +96,17 @@ body {
 }
 
 .icon-bar {
-  width: 10%;
   position: fixed;
-  top: 53%;
-  margin-left: 65px;
+  top: 50%;
+  padding: 20px 0;
+  margin-left: 50px;
   text-decoration: none;
   list-style-type: none;
 }
 
 .icon-bar li {
   text-decoration: none;
+  padding: 0 20px;
 }
 
 .icon-bar .fa {
@@ -115,8 +116,10 @@ body {
 }
 
 .icon-bar li a .fa:hover {
-  color: rgb(161, 154, 154);
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  /* color: rgb(161, 154, 154); */
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
 }
 
 @media only screen and (max-width: 992px) {

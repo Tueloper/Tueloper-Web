@@ -1,181 +1,262 @@
 <template>
-  <div id="container">
-    <a class="card-link" href="#">
-      <article class="blog-card">
-        <img class="post-image" :src="image" />
-        <div class="article-details">
-          <h4 class="post-category">{{ category }}</h4>
-          <h3 class="post-title">{{ name }}</h3>
-          <p class="post-description">{{ desc }}</p>
-          <p class="post-author">By {{ author }}</p>
+  <div id="Projects">
+    <div class="project-text">
+      <span class="what animated slideInUp">Some Things I've Built</span>
+      <div class="d-flex align-items-center">
+        <p class="get text-center">Projects</p>
+        <hr />
+      </div>
+    </div>
+    <div class="card-columns">
+      <div id="flashcard-app" class="container">
+        <ul class="flashcard-list">
+          <li
+            v-on:click="toggleCard(card)"
+            v-for="(card, index) in cards"
+            :key="card"
+          >
+            <transition name="flip">
+              <p v-bind:key="card.flipped" class="card">
+                {{ card.flipped ? card.back : card.front }}
+                <span v-on:click="cards.splice(index, 1)" class="delete-card"
+                  >X</span
+                >
+              </p>
+            </transition>
+          </li>
+        </ul>
+      </div>
+      <div class="card bg-warning">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the second card</p>
         </div>
-      </article>
-    </a>
+      </div>
+      <div class="card bg-success">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the third card</p>
+        </div>
+      </div>
+      <div class="card bg-danger">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the fourth card</p>
+        </div>
+      </div>
+      <div class="card bg-light">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the fifth card</p>
+        </div>
+      </div>
+      <div class="card bg-info">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the sixth card</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import card from './../card'
+const cards = [
+  {
+    front: 'The "First Computer Programmer"',
+    back: 'Ada Lovelace',
+    flipped: false
+  },
+  {
+    front: 'Invented the "Clarke Calculator"',
+    back: 'Edith Clarke',
+    flipped: false
+  },
+  {
+    front: 'Famous World War II Enigma code breaker',
+    back: 'Alan Turing',
+    flipped: false
+  },
+  {
+    front: 'Created satellite orbit analyzation software for NASA',
+    back: 'Dr. Evelyn Boyd Granville',
+    flipped: false
+  }
+]
+
 export default {
-  name: 'work',
-  data: () => ({
-    name: '10 Best Things to Do in Seattle',
-    category: 'Travel',
-    image:
-      'https://s3-us-west-2.amazonaws.com/s.cdpn.io/1159990/pike-place.jpg',
-    author: 'Katherine Kato',
-    desc: `Seattle is a seaport city on the west coast of the United States...`
-  })
+  el: '#flashcard-app',
+  data: {
+    cards: cards,
+    newFront: '',
+    newBack: '',
+    error: false
+  },
+  methods: {
+    toggleCard: function(card) {
+      card.flipped = !card.flipped
+    },
+    addNew: function() {
+      if (!this.newFront || !this.newBack) {
+        this.error = true
+      } else {
+        this.cards.push({
+          front: this.newFront,
+          back: this.newBack,
+          flipped: false
+        })
+        // set the field empty
+        this.newFront = ''
+        this.newBack = ''
+        // Make the warning go away
+        this.error = false
+      }
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
-$bg: #eedfcc;
-$text: #777;
-$black: #121212;
-$white: #fff;
-$red: #e04f62;
-$border: #ebebeb;
-$shadow: rgba(0, 0, 0, 0.2);
-
-@mixin transition($args...) {
-  transition: $args;
-}
-
-* {
-  box-sizing: border-box;
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
+#Projects {
+  height: auto;
+  padding: 100px 0;
+  font-family: 'Poppins';
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
   display: flex;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: $text;
-  background: $bg;
-  font-size: 0.9375rem;
-  min-height: 100vh;
-  margin: 0;
-  line-height: 1.6;
-  align-items: center;
-  justify-content: center;
-  text-rendering: optimizeLegibility;
+  flex-flow: row wrap;
 }
 
-#container {
-  width: 30rem;
-  height: 13.625rem;
+li {
+  list-style-type: none;
+  padding: 10px 10px;
+  transition: all 0.3s ease;
 }
 
-.blog-card {
-  display: flex;
-  flex-direction: row;
-  background: $white;
-  box-shadow: 0 0.1875rem 1.5rem $shadow;
-  border-radius: 0.375rem;
-  overflow: hidden;
+.container {
+  max-width: 100%;
+  padding: 2em;
 }
 
-.card-link {
+.card {
+  display: block;
+  width: 150px;
+  height: 175px;
+  padding: 80px 50px;
+  background-color: #51aae5;
+  border-radius: 7px;
+  margin: 5px;
+  text-align: center;
+  line-height: 27px;
+  cursor: pointer;
   position: relative;
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  &:hover .post-title {
-    @include transition(color 0.3s ease);
-    color: $red;
-  }
-  &:hover .post-image {
-    @include transition(opacity 0.3s ease);
-    opacity: 0.9;
-  }
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-box-shadow: 9px 10px 22px -8px rgba(209, 193, 209, 0.5);
+  -moz-box-shadow: 9px 10px 22px -8px rgba(209, 193, 209, 0.5);
+  box-shadow: 9px 10px 22px -8px rgba(209, 193, 209, 0.5);
+  will-change: transform;
 }
 
-.post-image {
-  @include transition(opacity 0.3s ease);
-  display: block;
-  width: 100%;
-  object-fit: cover;
+li:hover {
+  transform: scale(1.1);
 }
 
-.article-details {
-  padding: 1.5rem;
+li:nth-child(-n + 3) .card {
+  background-color: #e65f51;
 }
 
-.post-category {
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 0.75rem;
+li:nth-child(2n + 1) .card {
+  background-color: #a17de9;
+}
+
+li:nth-child(4n) .card {
+  background-color: #feca34;
+}
+
+li:nth-child(5n-2) .card {
+  background-color: #51aae5;
+}
+
+li:nth-child(4n + 4) .card {
+  background-color: #feca34;
+}
+
+li:nth-child(-7n + 7) .card {
+  background-color: #e46055;
+}
+
+.delete-card {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  opacity: 0.4;
+  transition: all 0.5s ease;
+}
+
+.delete-card:hover,
+.error {
+  opacity: 1;
+  transform: rotate(360deg);
+}
+
+.flip-enter-active {
+  transition: all 0.4s ease;
+}
+
+.flip-leave-active {
+  display: none;
+}
+
+.flip-enter,
+.flip-leave {
+  transform: rotateY(180deg);
+  opacity: 0;
+}
+
+/* Form */
+.flashcard-form {
+  position: relative;
+}
+
+label {
+  font-weight: 400;
+  color: #333;
+  margin-right: 10px;
+}
+
+input {
+  border-radius: 5px;
+  border: 2px solid #eaeaea;
+  padding: 10px;
+  outline: none;
+}
+
+button {
+  border-radius: 5px;
+  border: 1px solid #87cb84;
+  background-color: #87cb84;
+  padding: 8px 15px;
+  outline: none;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.0625rem;
-  margin: 0 0 0.75rem 0;
-  padding: 0 0 0.25rem 0;
-  border-bottom: 0.125rem solid $border;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.post-title {
-  @include transition(color 0.3s ease);
-  font-size: 1.125rem;
-  line-height: 1.4;
-  color: $black;
-  font-weight: 700;
-  margin: 0 0 0.5rem 0;
+button:hover {
+  background-color: #70a66f;
 }
 
-.post-author {
-  font-size: 0.875rem;
-  line-height: 1;
-  margin: 1.125rem 0 0 0;
-  padding: 1.125rem 0 0 0;
-  border-top: 0.0625rem solid $border;
-}
-
-@media (max-width: 40rem) {
-  #container {
-    width: 18rem;
-    height: 27.25rem;
-  }
-
-  .blog-card {
-    flex-wrap: wrap;
-  }
-}
-
-@supports (display: grid) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.625rem;
-    grid-template-areas: '. main main .' '. main main .';
-  }
-
-  #container {
-    grid-area: main;
-    align-self: center;
-    justify-self: center;
-  }
-
-  .post-image {
-    height: 100%;
-  }
-
-  .blog-card {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-  }
-
-  @media (max-width: 40rem) {
-    .blog-card {
-      grid-template-columns: auto;
-      grid-template-rows: 12rem 1fr;
-    }
-  }
+.error {
+  margin-top: 10px;
+  display: block;
+  color: #e44e42;
+  font-weight: 600;
 }
 </style>

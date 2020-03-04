@@ -5,7 +5,7 @@
       <div class="row about res_about animated slideInUp">
         <div class="col-md-6 col-sm-12 about-text">
           <div class="col-xs-6">
-            <h3>About</h3>
+            <p class="get">About</p>
           </div>
           <div class="col-xs-6 animated slideInLeft">
             <hr />
@@ -67,6 +67,10 @@
 .about-text {
   padding: 10px;
   width: 100%;
+}
+
+.about .get {
+  font-size: 60px;
 }
 
 .about p {
