@@ -39,7 +39,7 @@
     <div class="column data">
       <Banner />
       <About />
-      <Skills />
+      <!-- <Skills /> -->
       <!-- <Projects /> -->
       <Contact />
     </div>
@@ -51,14 +51,14 @@ import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 // import Projects from './../components/landing/project'
 import Contact from './../components/landing/contact'
-import Skills from './../components/landing/work'
+// import Skills from './../components/landing/work'
 export default {
   components: {
     Banner,
     About,
     // Projects,
-    Contact,
-    Skills
+    Contact
+    // Skills
   }
 }
 </script>
