@@ -3,10 +3,7 @@
     <div class="column icons">
       <ul class="icon-bar animated bounce">
         <li>
-          <a
-            href="https://web.facebook.com/Tueloper"
-            class="facebook animated slideInLeft"
-          >
+          <a href="https://web.facebook.com/Tueloper" class="facebook animated slideInLeft">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
@@ -21,10 +18,7 @@
           </a>
         </li>
         <li class="mt-4">
-          <a
-            href="https://www.linkedin.com/in/tochukwu-ozurumba/"
-            class="linkedin"
-          >
+          <a href="https://www.linkedin.com/in/tochukwu-ozurumba/" class="linkedin">
             <i class="fa fa-linkedin"></i>
           </a>
         </li>
@@ -39,7 +33,7 @@
     <div class="column data">
       <Banner />
       <About />
-      <Skills />
+      <!-- <Skills /> -->
       <!-- <Projects /> -->
       <Contact />
     </div>
@@ -51,14 +45,14 @@ import Banner from './../components/landing/banner'
 import About from './../components/landing/about'
 // import Projects from './../components/landing/project'
 import Contact from './../components/landing/contact'
-import Skills from './../components/landing/work'
+// import Skills from './../components/landing/work'
 export default {
   components: {
     Banner,
     About,
     // Projects,
-    Contact,
-    Skills
+    Contact
+    // Skills
   }
 }
 </script>

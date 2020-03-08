@@ -82,9 +82,9 @@ $bg: #eedfcc;
 $text: #777;
 $black: #121212;
 $white: #fff;
-$red: #e04f62;
+$red: #868686;
 $border: #ebebeb;
-$shadow: rgba(0, 0, 0, 0.2);
+$shadow: rgba(180, 180, 180, 0.2);
 
 @mixin transition($args...) {
   transition: $args;
@@ -100,7 +100,7 @@ $shadow: rgba(0, 0, 0, 0.2);
 
 body {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: $text;
   background: $bg;
@@ -120,8 +120,9 @@ body {
 
 .blog-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: $white;
+  border: 1px solid rgb(233, 233, 233);
   box-shadow: 0 0.1875rem 1.5rem $shadow;
   border-radius: 0.375rem;
   overflow: hidden;
