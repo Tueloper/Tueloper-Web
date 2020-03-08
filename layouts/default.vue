@@ -1,13 +1,15 @@
 <template>
   <div>
     <Loader v-if="loading" />
-    <div v-else>
+    <div v-else class="ban">
       <Header />
       <nuxt />
       <div
         ref="btnn"
         class="btnn animated bounceInUp 2s"
-        :style="[ scroller ? { display: displayShow } : { display: displayFalse } ]"
+        :style="[
+          scroller ? { display: displayShow } : { display: displayFalse }
+        ]"
       >
         <div @click.prevent="topFunction" id="myBtn" :title="top">
           <i class="fa fa-arrow-up animated jello infinite"></i>
@@ -86,6 +88,12 @@ html {
   overflow-x: hidden;
 }
 
+.ban {
+  /* background-image: url('./../assets/img/purple.jpg');
+  background-size: 100% 100%; */
+  /* background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
 .fadeOut {
   animation-name: fadeOut;
 }

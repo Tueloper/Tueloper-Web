@@ -1,110 +1,227 @@
 <template>
-  <div>
-    <div class="frame">
-      <slot name="picture"></slot>
-      <div class="social twitter">
-        <slot name="github"></slot>
-      </div>
-
-      <div class="social codepen">
-        <slot name="demo"></slot>
-      </div>
+  <div id="blog-card">
+    <div class="card-link">
+      <article class="blog-card">
+        <img class="post-image" :src="project.image" />
+        <div class="article-details">
+          <h4 class="post-category">{{ category }}</h4>
+          <h3 class="post-title">{{ project.title }}</h3>
+          <p class="post-description">{{ project.content }}</p>
+          <div class="post-author  head  ">
+            <i class="fa fa-envelope "></i>
+            <div class="d-flex ">
+              <a v-if="project.github_url" :href="project.github_url">
+                <i class="fa fa-github "></i>
+              </a>
+              <a v-if="project.link" :href="project.link">
+                <i class="fa fa-link "></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
+  <!-- </div>
+  <div class="card  shadow mb-3" style="max-width: 20rem">
+    <div class="card-header  head  bg-transparent ">
+      <i class="fa fa-envelope fa-3x"></i>
+      <div class="d-flex ">
+        <a v-if="project.github_url" :href="project.github_url">
+          <i class="fa fa-github fa-2x"></i>
+        </a>
+        <a v-if="project.link" :href="project.link">
+          <i class="fa fa-link fa-2x"></i>
+        </a>
+      </div>
+    </div>
+    <div class="card-body ">
+      <h5 class="card-title">{{ project.title }}</h5>
+      <p class="card-text">
+        {{ project.content }}
+      </p>
+    </div>
+    <div class="card-footer bg-transparent">
+      <div class="p-badges">
+        <SpanT v-for="stack of project.stacks" :key="stack" />
+      </div>
+    </div>
+  </div> -->
 </template>
 
+<script>
+import SpanT from './span'
+export default {
+  props: ['project'],
+  components: { SpanT }
+}
+</script>
+
 <style lang="scss" scoped>
-$body: #282828;
-$twitter: #55acee;
-$linkedin: #007bb5;
-$codepen: #ffdd40;
-$transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
-%focus-it {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 0;
-  opacity: 0.8;
-  z-index: 1;
-  cursor: pointer;
-  i {
-    opacity: 1;
-    font-size: 20vw;
-    margin: 15vw 33vw;
+.card {
+  font-family: 'Poppins';
+  height: 23rem;
+  border-radius: 0 !important;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header {
+  border-bottom: 0 !important;
+}
+
+.card-footer {
+  border-top: 0ch !important;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+$bg: #eedfcc;
+$text: #777;
+$black: #121212;
+$white: #fff;
+$red: #868686;
+$border: #ebebeb;
+$shadow: rgba(180, 180, 180, 0.2);
+
+@mixin transition($args...) {
+  transition: $args;
+}
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
   }
 }
 
 body {
-  width: 50%;
-  height: 300vh;
-  background-color: $body;
   display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: $text;
+  background: $bg;
+  font-size: 0.9375rem;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 1.6;
   align-items: center;
   justify-content: center;
-  .frame {
-    width: 80vw;
-    height: 50vw;
-    border-radius: 5%;
-    overflow: hidden;
-    position: relative;
-    .picture {
-      width: 100%;
-      height: 100%;
-      background-image: url('https://ucarecdn.com/f138bad2-15be-4c93-a678-5018869ee28f/');
-      z-index: 0;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: $transition;
-      filter: grayscale(100%);
-    }
-    .social {
-      position: absolute;
-      right: 2vw;
-      width: 5vw;
-      height: 5vw;
-      border-radius: 50%;
-      z-index: 2;
-      a {
-        display: contents;
-        i {
-          color: white;
-          margin: 7px;
-          opacity: 0;
-        }
-      }
-      &.twitter {
-        bottom: 2vw;
-        background-color: $twitter;
-        &:hover,
-        &:focus {
-          @extend %focus-it;
-        }
-      }
-      &.linkedin {
-        bottom: 10vw;
-        background-color: $linkedin;
-        &:hover,
-        &:focus {
-          @extend %focus-it;
-        }
-      }
-      &.codepen {
-        bottom: 18vw;
-        background-color: $codepen;
-        &:hover,
-        &:focus {
-          @extend %focus-it;
-        }
-      }
-    }
-    &:hover,
-    &.focus {
-      .picture {
-        transition: $transition;
-        transform: scale(1.3) rotate(10deg);
-      }
+  text-rendering: optimizeLegibility;
+}
+
+#container {
+  width: 30rem;
+  height: 13.625rem;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  border: 1px solid rgb(233, 233, 233);
+  box-shadow: 0 0.1875rem 1.5rem $shadow;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.card-link {
+  position: relative;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  &:hover .post-title {
+    @include transition(color 0.3s ease);
+    color: $red;
+  }
+  &:hover .post-image {
+    @include transition(opacity 0.3s ease);
+    opacity: 0.9;
+  }
+}
+
+.post-image {
+  @include transition(opacity 0.3s ease);
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-details {
+  padding: 1.5rem;
+}
+
+.post-category {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.0625rem;
+  margin: 0 0 0.75rem 0;
+  padding: 0 0 0.25rem 0;
+  border-bottom: 0.125rem solid $border;
+}
+
+.post-title {
+  @include transition(color 0.3s ease);
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: $black;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.post-author {
+  font-size: 0.875rem;
+  line-height: 1;
+  margin: 1.125rem 0 0 0;
+  padding: 1.125rem 0 0 0;
+  border-top: 0.0625rem solid $border;
+}
+
+@media (max-width: 40rem) {
+  #container {
+    width: 18rem;
+    height: 27.25rem;
+  }
+
+  .blog-card {
+    flex-wrap: wrap;
+  }
+}
+
+@supports (display: grid) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.625rem;
+    grid-template-areas: '. main main .' '. main main .';
+  }
+
+  #container {
+    grid-area: main;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .post-image {
+    height: 100%;
+  }
+
+  .blog-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+  }
+
+  @media (max-width: 40rem) {
+    .blog-card {
+      grid-template-columns: auto;
+      grid-template-rows: 12rem 1fr;
     }
   }
 }

@@ -5,7 +5,7 @@
       <div class="row about res_about animated slideInUp">
         <div class="col-md-6 col-sm-12 about-text">
           <div class="col-xs-6">
-            <h3>About</h3>
+            <p class="get">About</p>
           </div>
           <div class="col-xs-6 animated slideInLeft">
             <hr />
@@ -69,6 +69,10 @@
   width: 100%;
 }
 
+.about .get {
+  font-size: 60px;
+}
+
 .about p {
   font-size: 16px;
 }
@@ -85,6 +89,14 @@
 .tochi-img {
   width: 60%;
   height: 80%;
+}
+
+.tochi-img::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ccc;
+  content: '';
 }
 
 .imgDiv {
