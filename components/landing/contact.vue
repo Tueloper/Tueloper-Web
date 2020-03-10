@@ -7,16 +7,11 @@
           <p class="get text-center">Get In Touch</p>
         </div>
 
-        <form action="#">
+        <form action="#" @submit.prevent="sendMessage">
           <div class="row">
             <div class="col-md-6 col-sm-12">
               <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                />
+                <input type="text" class="form-control" v-model="name" id="name" placeholder="Name" />
               </div>
             </div>
 
@@ -25,6 +20,7 @@
                 <input
                   type="email"
                   class="form-control"
+                  v-model="email"
                   id="email"
                   placeholder="name@example.com"
                 />
@@ -37,6 +33,7 @@
                 <input
                   type="subject"
                   class="form-control"
+                  v-model="subject"
                   id="subject"
                   placeholder="Subject"
                 />
@@ -48,6 +45,7 @@
               <div class="form-group">
                 <textarea
                   class="form-control"
+                  v-model="content"
                   id="exampleFormControlTextarea1"
                   placeholder="Message"
                   rows="5"
@@ -56,11 +54,9 @@
             </div>
           </div>
           <div class="row d-flex justify-content-center">
-            <div
-              class="col-md-12 col-sm-12 d-flex justify-content-center text-center"
-            >
+            <div class="col-md-12 col-sm-12 d-flex justify-content-center text-center">
               <div class="form-group">
-                <button class="btn btn-outline-dark">Submit</button>
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
               </div>
             </div>
           </div>
@@ -69,6 +65,40 @@
     </div>
   </div>
 </template>
+
+<script>
+import axios from 'axios'
+export default {
+  data() {
+    return {
+      name: 'Your Name',
+      subject: 'Title Of Your Message',
+      email: 'text@example.com',
+      content: 'Type in your message here'
+    }
+  },
+  methods: {
+    async sendMessage() {
+      const msg = {
+        name: this.name,
+        subject: this.subject,
+        email: this.email,
+        content: this.content
+      }
+
+      try {
+        const contactMessage = await axios.post(
+          'https://tueloperbe.herokuapp.com/api/v1/contact',
+          msg
+        )
+        console.log(contactMessage)
+      } catch (e) {
+        return console.log(e)
+      }
+    }
+  }
+}
+</script>
 
 <style scoped>
 #Contact {

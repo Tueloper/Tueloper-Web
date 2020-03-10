@@ -88,7 +88,7 @@
 
 .tochi-img {
   width: 60%;
-  height: 80%;
+  height: 100%;
 }
 
 .tochi-img::after {

@@ -31,11 +31,9 @@
               </nuxt-link>
             </li>
             <li class="nav-item active">
-              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#About"
-                >About</nuxt-link
-              >
+              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#About">About</nuxt-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <nuxt-link :class="[scroller ? navBlack : navLink]" to="#Skills"
                 >Skills</nuxt-link
               >
@@ -44,11 +42,9 @@
               <nuxt-link :class="[scroller ? navBlack : navLink]" to="#Projects"
                 >Projects</nuxt-link
               >
-            </li>
+            </li>-->
             <li class="nav-item">
-              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#Contact"
-                >Contact</nuxt-link
-              >
+              <nuxt-link :class="[scroller ? navBlack : navLink]" to="#Contact">Contact</nuxt-link>
             </li>
           </ul>
 
@@ -57,12 +53,7 @@
             target="_blank"
             href="https://res.cloudinary.com/dwtvwjhn3/raw/upload/v1579212854/TochukwuOzurumbaResume_1_ipj4as.pdf"
           >
-            <button
-              class="btn my-2 my-sm-0"
-              :class="[scroller ? buttonWhite : buttonBlack]"
-            >
-              Resume
-            </button>
+            <button class="btn my-2 my-sm-0" :class="[scroller ? buttonWhite : buttonBlack]">Resume</button>
           </a>
         </div>
       </div>
