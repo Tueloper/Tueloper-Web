@@ -1,72 +1,135 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        tueloper
-      </h1>
-      <h2 class="subtitle">
-        My striking Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+  <div class="row">
+    <div class="column icons">
+      <ul class="icon-bar animated bounce">
+        <li>
+          <a href="https://web.facebook.com/Tueloper" class="facebook animated slideInLeft">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="mt-4">
+          <a href="https://twitter.com/Tueloper" class="twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="mt-4">
+          <a href="#" class="google">
+            <i class="fa fa-medium"></i>
+          </a>
+        </li>
+        <li class="mt-4">
+          <a href="https://www.linkedin.com/in/tochukwu-ozurumba/" class="linkedin">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="mt-4">
+          <a href="https://github.com/Tueloper" class="medium">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="column data">
+      <Banner />
+      <About />
+      <!-- <Skills /> -->
+      <!-- <Projects /> -->
+      <Contact />
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
+import Banner from './../components/landing/banner'
+import About from './../components/landing/about'
+// import Projects from './../components/landing/project'
+import Contact from './../components/landing/contact'
+// import Skills from './../components/landing/work'
 export default {
   components: {
-    Logo
+    Banner,
+    About,
+    // Projects,
+    Contact
+    // Skills
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped>
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+.row {
+  overflow: hidden;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.column {
+  float: left;
+  /* height: 300px; Should be removed. Only for demonstration */
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.data {
+  width: 75%;
 }
 
-.links {
-  padding-top: 15px;
+.icons {
+  width: 15%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  padding: 20px 0;
+  margin-left: 50px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.icon-bar li {
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.icon-bar .fa {
+  font-size: 21px;
+  line-height: 1.2;
+  color: black;
+}
+
+.icon-bar li a .fa:hover {
+  /* color: rgb(161, 154, 154); */
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+@media only screen and (max-width: 992px) {
+  .data {
+    width: 85%;
+  }
+  .icons {
+    width: 15%;
+  }
+  .icon-bar {
+    width: 10%;
+    margin-left: 60px;
+  }
+
+  .icon-bar .fa {
+    font-size: 18px;
+  }
 }
 </style>
