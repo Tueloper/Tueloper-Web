@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/01ce2190-6117-46b8-8a77-58338ad637d3/deploy-status)](https://app.netlify.com/sites/hardcore-hugle-ba1400/deploys)
+
 # tueloper
 
 > My striking Nuxt.js project
