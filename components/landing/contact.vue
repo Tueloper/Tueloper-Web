@@ -162,14 +162,17 @@ textarea {
 
 @media screen and (max-width: 772px) {
   #Contact {
-    height: 92vh;
+    /* height: 92vh; */
     padding: 100px 10px;
+  }
+  .get {
+    font-size: 40px;
   }
 }
 
 @media screen and (max-width: 602px) {
   #Contact {
-    height: 92vh;
+    /* height: 100vh; */
     padding: 100px 50px;
   }
 }

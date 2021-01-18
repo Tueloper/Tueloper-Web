@@ -3,7 +3,7 @@
     <div class="footer-section">
       <div class="text-center">
         Copyright &copy;
-        <span>{{date}}</span> All rights reserved Tueloper loves
+        <span>{{date}}</span> Tueloper loves
         <i class="fa fa-heart" aria-hidden="true"></i> You!!.....
       </div>
     </div>
