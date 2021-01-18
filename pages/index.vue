@@ -118,14 +118,14 @@ body {
 
 @media only screen and (max-width: 992px) {
   .data {
-    width: 85%;
+    width: 90%;
   }
   .icons {
-    width: 15%;
+    width: 10%;
   }
   .icon-bar {
     width: 10%;
-    margin-left: 60px;
+    margin-left: 25px;
   }
 
   .icon-bar .fa {
